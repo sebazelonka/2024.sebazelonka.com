@@ -1,0 +1,49 @@
+<style webc:scoped>
+  :host {
+    position: relative;
+    display: flex;
+    padding-inline: var(--page-gutters);
+    margin-block: var(--page-gutters) var(--space-xl);
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<header webc:root="override">
+  <a href="/"
+    ><img src="/public/images/glasses.webp" alt="Sebastian Zelonka"
+  /></a>
+  <nav>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>

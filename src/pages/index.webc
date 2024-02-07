@@ -1,0 +1,7 @@
+---
+permalink: "/"
+---
+
+<sz-banner> </sz-banner>
+<sz-about> </sz-about>
+<sz-blog> </sz-blog>

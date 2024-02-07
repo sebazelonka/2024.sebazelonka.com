@@ -1,0 +1,80 @@
+<style webc:scoped="sz-blog">
+  :host {
+    margin-top: 300px;
+  }
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    grid-area: banner;
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid #000;
+    justify-content: space-between;
+
+    & a {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+      display: block;
+    }
+
+    & time {
+      font-size: 1rem;
+      color: #000;
+      display: block;
+    }
+
+    & .source {
+      font-size: 1rem;
+      color: #fff;
+      align-self: flex-end;
+      background-color: #000;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      margin: 1rem 0;
+      display: inline-block;
+    }
+  }
+</style>
+
+<script webc:setup>
+  const blog = $data.collections.posts.map(({ data, url }) => ({
+    ...data,
+    url,
+  }));
+  const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 4);
+  console.log(posts);
+</script>
+
+<section webc:root="override">
+  <h2>Blog</h2>
+
+  <ul role="list">
+    <li webc:if="!count || index < count" webc:for="(post, index) of posts">
+      <div class="info">
+        <a class="text-1 font-semibold" :href="post.url" @text="post.title"></a>
+        <time @text="post.date.toLocaleDateString()"></time>
+        <span webc:if="post.url" class="source">
+          <template @text="post.tags[0]" webc:nokeep></template>
+        </span>
+      </div>
+      <p @text="post.description"></p>
+    </li>
+  </ul>
+</section>

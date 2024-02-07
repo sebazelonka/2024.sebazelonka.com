@@ -1,0 +1,23 @@
+<style webc:scoped="sz-about">
+  :host {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 196px;
+  }
+  p {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+</style>
+
+<section webc:root="override">
+  <p>
+    My name is Sebastian Zelonka and I'm working from Buenos Aires, Argentina.
+    For the last 10+ years I have been working as experience designer & front
+    end developer on digital products from web startups to industriy icons to
+    help build their products.
+  </p>
+</section>

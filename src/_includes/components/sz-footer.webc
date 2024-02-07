@@ -1,0 +1,11 @@
+<style webc:scoped="sz-footer">
+  :host {
+    margin-top: 300px;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 0;
+  }
+</style>
+<footer webc:root="override">
+  <div class="container">@2024 Sebastian Zelonka</div>
+</footer>
