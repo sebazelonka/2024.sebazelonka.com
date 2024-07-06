@@ -1,23 +1,52 @@
 <style webc:scoped="sz-about">
   :host {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 196px;
+    margin: 6rem 0;
   }
   p {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 3rem;
-    line-height: 1.25;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 </style>
 
-<section webc:root="override">
+<slot id="about" webc:root="override">
   <p>
-    My name is Sebastian Zelonka and I'm working from Buenos Aires, Argentina.
-    For the last 10+ years I have been working as experience designer & front
-    end developer on digital products from web startups to industriy icons to
-    help build their products.
+    Hey there! I'm Sebastian from Buenos Aires. My professional path has been a
+    bit of a whirlwind, starting in the design world and eventually getting
+    hooked on coding. It's been a wild ride with lots of learning along the way.
   </p>
-</section>
+
+  <p>
+    Back in 2010, I kicked things off at <a href="#">Global Logic</a>, getting
+    my feet wet in UX design. By 2011, I was mixing it up at
+    <a href="#">Zauber</a>, where I got to play around with both UX design and
+    UI development. This combo really clicked for me, and I kept at it with
+    <a href="#">Aquicore</a> starting in 2014.
+  </p>
+
+  <p>
+    2015 was the year I dived into product design at <a href="#">Wolox</a>,
+    helping startups shape their MVPs. Fast forward to 2016, and I was tackling
+    more complex challenges as a Senior Product Designer at
+    <a href="#">Onapsis</a>.
+  </p>
+
+  <p>
+    The big pivot came in 2018 when I shifted gears towards front-end
+    development. This move wasn't just about learning new skills; it was about
+    seeing the digital world from a new angle.
+  </p>
+
+  <p>
+    Since making that switch, my roles at <a href="#">Increase</a>,
+    <a href="#">ank</a>, and lately as a Senior Design System Engineer at
+    <a href="#">Making Sense</a> have all been about bridging the gap between
+    design, product, and engineering. Speaking the language of all three has
+    become one of my top strengths, helping teams work together more smoothly.
+  </p>
+
+  <p>
+    This whole journey has been about growing, learning, and blending different
+    disciplines to create better, more user-friendly products. I'm all in for
+    the next set of challenges and can't wait to see where this path takes me.
+  </p>
+</slot>

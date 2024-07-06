@@ -7,5 +7,5 @@
   }
 </style>
 <footer webc:root="override">
-  <div class="container">@2024 Sebastian Zelonka</div>
+  <div>@2024 Sebastian Zelonka</div>
 </footer>

@@ -1,7 +1,4 @@
 ---
 permalink: "/"
 ---
-
-<sz-banner> </sz-banner>
-<sz-about> </sz-about>
-<sz-blog> </sz-blog>
+<sz-content> </sz-content>

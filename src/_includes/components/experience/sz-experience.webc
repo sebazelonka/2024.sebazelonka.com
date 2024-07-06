@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="sz-experience.css" webc:scoped="sz-experience" />
+
+<section webc:root="override">
+  <div>
+    <h3>Experience</h3>
+    <ul>
+      <li>
+        <div class="company">
+          <h4>Making Sense</h4>
+          <h4>UX Developer</h4>
+        </div>
+        <p>2021 — Present</p>
+      </li>
+      <li>
+        <div class="company">
+          <h4>ank</h4>
+          <h4>FE Developer</h4>
+        </div>
+        <p>2020 — 2021</p>
+        <div class="company">
+          <h4></h4>
+          <h4>SR UX Designer</h4>
+        </div>
+        <p>2020 — 2020</p>
+      </li>
+      <li>
+        <div class="company">
+          <h4>Increase</h4>
+          <h4>SR UX Designer</h4>
+        </div>
+        <p>2020 — 2020</p>
+      </li>
+      <li>
+        <div class="company">
+          <h4>Increase</h4>
+          <h4>SR UX Designer</h4>
+        </div>
+        <p>2019 — 2020</p>
+      </li>
+      <li>
+        <div class="company">
+          <h4><a href="#">View full experience ↗</a></h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

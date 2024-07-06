@@ -1,0 +1,32 @@
+:host {
+  padding: 1rem 0;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin-top: 2rem;
+
+    .company {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        color: var(--typography);
+      }
+    }
+  }
+}

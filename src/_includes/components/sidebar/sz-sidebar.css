@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 6rem 0;
+  position: sticky;
+  max-height: 100vh;
+  top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 100%);
+
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 20rem;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 3rem;
+  & li a {
+    display: flex;
+
+    & svg {
+      fill: hsl(0, 0%, 100%);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

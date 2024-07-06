@@ -10,8 +10,8 @@ permalink: "blog/"
   const posts = [...blog].sort((a, b) => b.date - a.date);
 </script>
 
-<h2>Blog</h2>
 
+<Sidebar> </Sidebar>
 <ul class="flow" role="list" webc:root="override">
   <li webc:if="!count || index < count" webc:for="(post, index) of posts">
     <div class="info">

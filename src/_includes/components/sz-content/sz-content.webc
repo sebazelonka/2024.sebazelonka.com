@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="sz-content.css" webc:scoped="sz-content" />
+
+<section webc:root="override">
+  <sz-about></sz-about>
+  <sz-experience @company="ank" @startDate="04-2020" @endDate="11-2021"></sz-experience>
+</section>
