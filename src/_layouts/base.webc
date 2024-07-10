@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sebastian Zelonka's personal website" />
     <title>Sebastian Zelonka</title>
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/cne0gpf.css"
+      webc:keep
+      prefetch
+    />
     <link rel="preconnect" href="https://rsms.me/" webc:keep />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
@@ -13,6 +19,6 @@
   </head>
   <body class="container">
     <sz-sidebar> </sz-sidebar>
-    <main style="margin-top: 6rem" @raw="content"></main>
+    <main @raw="content"></main>
   </body>
 </html>

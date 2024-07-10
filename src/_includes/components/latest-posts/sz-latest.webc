@@ -1,0 +1,20 @@
+<script webc:setup>
+  const blog = $data.collections.posts.map(({ data, url }) => ({
+    ...data,
+    url,
+  }));
+  const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 3);
+</script>
+
+<section webc:root="override">
+  <h2>Latest thoughts</h2>
+  <ul class="flow" role="list" webc:root="override">
+    <li webc:if="!count || index < count" webc:for="(post, index) of posts">
+      <div class="info">
+        <time @text="post.date.toLocaleDateString()"></time>
+      </div>
+      <a :href="post.url" @text="post.title"></a>
+      <p @text="post.description"></p>
+    </li>
+  </ul>
+</section>

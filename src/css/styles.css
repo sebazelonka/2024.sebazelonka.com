@@ -1,37 +1,40 @@
 @import "_reset.css";
 @import "_typography.css";
+@import "_layout.css";
 
 :root {
-  --typography: hsl(220, 20%, 60%);
-  --link: hsl(221, 20%, 100%);
-  --accent: hsl(313, 100%, 35%);
+  --typography: 220, 20%, 60%;
+  --link: 221, 20%, 100%;
+  --accent: 313, 100%, 35%;
+  --background: 220, 30%, 5%;
 }
 
-body {
-  background-color: hsl(220, 30%, 5%);
-  color: var(--typography);
-  -webkit-font-smoothing: antialiased;
-}
-
-p {
-  line-height: 1.5;
-}
-
-a {
-  color: var(--link);
-  text-decoration: none;
-  &:hover {
-    color: var(--accent)
+@media (prefers-color-scheme: light) {
+  :root {
+    --typography: 220, 70%, 10%;
+    --link: 313, 100%, 35%;
+    --accent: 313, 100%, 35%;
+    --background: 223, 100%, 95%;
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  gap: 2rem;
-  min-height: 100vh;
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--typography));
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(var(--link));
+  &:hover {
+    color: hsl(var(--accent));
+  }
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid hsl(var(--accent));
+  padding-left: 1rem;
+  margin: 1rem 0;
 }

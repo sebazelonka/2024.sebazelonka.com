@@ -2,8 +2,6 @@
 permalink: "about/"
 ---
 
-# About
-
 Hi, I'm Sebastian, a UX Designer that likes to code. I born in Buenos Aires, Argentina.
 
 I have 8+ years of experience on Digital Products and I've worked on several projects from different industries: B2B, B2C, Non Profit Orgs, Volunteer.
@@ -25,5 +23,5 @@ Because of the type of clients I primarily work with, I’m not able to display 
 - Zauber 2011 - 2013
 
 > I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provide alternate designs in order to present the best possible options.
->
->Alex Horan • Director of Product Management, Onapsis
+
+Alex Horan • Director of Product Management, Onapsis

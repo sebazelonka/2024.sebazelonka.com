@@ -8,9 +8,10 @@
   </div>
   <nav>
     <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
-    <a href="/about/">About</a>
+    <a href="/about">About</a>
+    <a href="/blog">Some Thoughts</a>
   </nav>
+
   <div class="social">
     <ul>
       <li>
@@ -90,5 +91,4 @@
       </li>
     </ul>
   </div>
-  <sz-footer></sz-footer>
 </header>

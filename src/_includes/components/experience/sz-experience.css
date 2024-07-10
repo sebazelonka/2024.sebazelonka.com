@@ -2,10 +2,16 @@
   padding: 1rem 0;
 }
 
+p {
+  margin: 0;
+}
+
 h3 {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: white;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 ul {
@@ -20,13 +26,9 @@ ul {
     margin-top: 2rem;
 
     .company {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
       align-items: center;
-
-      a {
-        color: var(--typography);
-      }
     }
   }
 }

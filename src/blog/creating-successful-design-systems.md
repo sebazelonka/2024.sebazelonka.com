@@ -28,7 +28,7 @@ This week I've started a workshop by [Brad Frost](https://bradfrost.com/) about 
 
 ### Reading
 
-- [Design Systems are for user interfaces ](https://bradfrost.com/blog/post/design-systems-are-for-user-interfaces/)
+- [Design Systems are for user interfaces](https://bradfrost.com/blog/post/design-systems-are-for-user-interfaces/)
 
 ### Tools
 

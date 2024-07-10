@@ -2,5 +2,6 @@
 
 <section webc:root="override">
   <sz-about></sz-about>
-  <sz-experience @company="ank" @startDate="04-2020" @endDate="11-2021"></sz-experience>
+  <sz-experience></sz-experience>
+  <sz-latest></sz-latest>
 </section>

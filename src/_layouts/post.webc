@@ -1,5 +1,5 @@
 ---
-permalink: "blog/"
+layout: "base"
 ---
 
 <script webc:setup>
@@ -7,15 +7,21 @@ permalink: "blog/"
     ...data,
     url,
   }));
-  const posts = [...blog].sort((a, b) => b.date - a.date);
+  const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 3);
 </script>
 
+<a href="/blog">< Back to posts list</a>
+<h2 @raw="title"></h2>
+<div @raw="content"></div>
+<hr style="margin: 3rem 0" />
+
+<h2>Latest posts</h2>
 <ul class="flow" role="list" webc:root="override">
   <li webc:if="!count || index < count" webc:for="(post, index) of posts">
     <div class="info">
       <time @text="post.date.toLocaleDateString()"></time>
     </div>
+
     <a :href="post.url" @text="post.title"></a>
-    <p @text="post.description"></p>
   </li>
 </ul>

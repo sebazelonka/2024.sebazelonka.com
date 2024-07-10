@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+
+  gap: 2rem;
+  min-height: 100vh;
+}
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 6rem 0 0;
+  }
+}

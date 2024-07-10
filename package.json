@@ -6,7 +6,7 @@
   "scripts": {
     "build": "eleventy",
     "clean": "rm -rf _site && rm -rf .cache",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "eleventy --serve"
   },
   "author": "Sebastian Zelonka",
   "license": "ISC",
