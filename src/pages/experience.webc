@@ -1,0 +1,28 @@
+---
+permalink: "experience/"
+---
+
+<script webc:setup>
+  const blog = $data.collections.experience.map(({ data, url }) => ({
+    ...data,
+    url,
+  }));
+  const posts = [...blog].sort((a, b) => b.date - a.date);
+</script>
+
+<h3>Experience</h3>
+<p>This is the full list of works</p>
+
+<ul class="flow" role="list" webc:root="override">
+  <li webc:if="!count || index < count" webc:for="(post, index) of posts">
+    <div style="display: flex; gap: 1rem; justify-content: space-between">
+      <a :href="post.website" @text="post.company"></a>
+      <div style="display: flex">
+        <p @text="post.startDate"></p>
+        -
+        <p @text="post.endDate"></p>
+      </div>
+    </div>
+    <div :log="post" @raw="post.content"></div>
+  </li>
+</ul>

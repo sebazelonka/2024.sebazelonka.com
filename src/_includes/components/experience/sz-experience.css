@@ -6,28 +6,25 @@ p {
   margin: 0;
 }
 
-h3 {
-  font-size: 1rem;
-}
-
 h4 {
-  font-size: 1rem;
+  font-size: 0.75em;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 1em;
 
   li {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     align-items: center;
     gap: 0.5rem 1rem;
     margin-top: 2rem;
 
     .company {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 2fr 3fr;
       align-items: center;
     }
   }

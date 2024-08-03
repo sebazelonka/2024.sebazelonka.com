@@ -35,10 +35,7 @@ h6 {
 
 p {
   line-height: calc(1ex / 0.32);
-  margin: calc(1ex / 0.32) 0;
-  &:first-of-type {
-    margin-top: 0;
-  }
+  margin-bottom: calc(1ex / 0.32);
 }
 
 h1 {

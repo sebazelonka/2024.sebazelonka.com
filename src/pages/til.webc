@@ -1,0 +1,20 @@
+---
+permalink: "til/"
+---
+
+<script webc:setup>
+  const til = $data.collections.til.map(({ data, url }) => ({
+    ...data,
+    url,
+  }));
+  const data = [...til].sort((a, b) => b.date - a.date);
+</script>
+
+<h2>Today I learned</h2>
+<ul class="flow" role="list" webc:root="override">
+  <li webc:if="!count || index < count" webc:for="(post, index) of data">
+
+
+    <p @raw="content"></p>
+  </li>
+</ul>

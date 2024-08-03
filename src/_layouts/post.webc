@@ -10,8 +10,8 @@ layout: "base"
   const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 3);
 </script>
 
-<a href="/blog">< Back to posts list</a>
-<h2 @raw="title"></h2>
+<a href="/blog"><< Back to posts list</a>
+<h3 @raw="title"></h3>
 <div @raw="content"></div>
 <hr style="margin: 3rem 0" />
 

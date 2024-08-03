@@ -1,0 +1,20 @@
+---
+permalink: "experience/"
+---
+
+<script webc:setup>
+  const experience = $data.collections.posts.map(({ data, url }) => ({
+    ...data,
+    url,
+  }));
+  const experiences = [...experience].sort((a, b) => b.date - a.date);
+</script>
+
+<ul class="flow" role="list">
+  <li
+    webc:if="!count || index < count"
+    webc:for="(experience, index) of experiences"
+  >
+    <p @text="experience.website"></p>
+  </li>
+</ul>

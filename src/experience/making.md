@@ -1,8 +1,8 @@
 ---
-company: 'making sense'
-startDate: '11-2022'
-endDate: 'present'
-website: 'www.makingsense.com'
+company: "making sense"
+startDate: "11-2022"
+endDate: "present"
+website: "https://makingsense.com"
 ---
 
 ## Senior Design System Engineer

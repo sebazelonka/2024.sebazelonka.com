@@ -1,8 +1,8 @@
 ---
-company: 'ank'
-startDate: '04-2020'
-endDate: '11-2022'
-website: 'ank.app'
+company: "ank"
+startDate: "04-2020"
+endDate: "11-2022"
+website: "http://ank.app"
 ---
 
 ## Senior Design System Engineer
