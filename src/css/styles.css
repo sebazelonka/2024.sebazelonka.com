@@ -3,33 +3,160 @@
 @import "_layout.css";
 
 :root {
-  --typography: 220, 20%, 60%;
-  --link: 221, 20%, 100%;
-  --accent: 313, 100%, 35%;
-  --background: 220, 30%, 5%;
+  --typography: 222, 14%, 67%;
+  --muted: 222, 11%, 45%;
+  --heading: 45, 29%, 97%;
+  --link: 45, 29%, 97%;
+  --accent: 184, 100%, 41%;
+  --accent-secondary: 81, 79%, 62%;
+  --signal: 81, 79%, 62%;
+  --background: 0, 0%, 2%;
+  --surface: 0, 0%, 7%;
+  --line: 0, 0%, 18%;
+  --font-sans: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --typography: 220, 70%, 10%;
-    --link: 313, 100%, 35%;
-    --accent: 313, 100%, 35%;
-    --background: 223, 100%, 95%;
+  :root:not([data-theme="dark"]) {
+    --typography: 225, 16%, 28%;
+    --muted: 225, 10%, 48%;
+    --heading: 228, 28%, 8%;
+    --link: 228, 28%, 8%;
+    --accent: 184, 100%, 32%;
+    --accent-secondary: 81, 72%, 42%;
+    --signal: 81, 72%, 42%;
+    --background: 44, 35%, 95%;
+    --surface: 44, 35%, 99%;
+    --line: 225, 12%, 82%;
   }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --typography: 225, 16%, 28%;
+  --muted: 225, 10%, 48%;
+  --heading: 228, 28%, 8%;
+  --link: 228, 28%, 8%;
+  --accent: 184, 100%, 32%;
+  --accent-secondary: 81, 72%, 42%;
+  --signal: 81, 72%, 42%;
+  --background: 44, 35%, 95%;
+  --surface: 44, 35%, 99%;
+  --line: 225, 12%, 82%;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --typography: 222, 14%, 67%;
+  --muted: 222, 11%, 45%;
+  --heading: 45, 29%, 97%;
+  --link: 45, 29%, 97%;
+  --accent: 184, 100%, 41%;
+  --accent-secondary: 81, 79%, 62%;
+  --signal: 81, 79%, 62%;
+  --background: 0, 0%, 2%;
+  --surface: 0, 0%, 7%;
+  --line: 0, 0%, 18%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--typography));
   -webkit-font-smoothing: antialiased;
+  background-image:
+    linear-gradient(hsl(var(--line) / 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--line) / 0.14) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-attachment: fixed;
 }
 
 a {
   text-decoration: none;
   color: hsl(var(--link));
+  transition: color 180ms ease;
   &:hover {
     color: hsl(var(--accent));
   }
+}
+
+a:focus-visible {
+  outline: 2px solid hsl(var(--accent));
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+main {
+  min-width: 0;
+}
+
+main > * {
+  animation: reveal 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+main section > h2,
+main > h2,
+main > h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--accent));
+}
+
+main section > h2::after,
+main > h2::after,
+main > h3::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, hsl(var(--accent-secondary)), hsl(var(--accent)), transparent);
+}
+
+main .flow li {
+  position: relative;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid hsl(var(--line));
+  background: hsl(var(--surface) / 0.72);
+  transition: transform 200ms ease, border-color 200ms ease, background 200ms ease;
+}
+
+main .flow li + li {
+  margin-top: 0.75rem;
+}
+
+main .flow li:hover {
+  transform: translateX(5px);
+  border-color: hsl(var(--accent) / 0.55);
+  background: hsl(var(--surface));
+}
+
+main .flow li > a {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+main .flow time {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: hsl(var(--muted));
+}
+
+main .flow p:last-child {
+  margin: 0.6rem 0 0;
+  font-size: 0.88rem;
 }
 
 blockquote {
@@ -37,6 +164,126 @@ blockquote {
   border-left: 4px solid hsl(var(--accent));
   padding-left: 1rem;
   margin: 1rem 0;
+}
+
+.theme-control {
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  transform: translateY(-50%);
+}
+
+.theme-control summary {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid hsl(var(--line));
+  border-radius: 50%;
+  color: #050505;
+  background: linear-gradient(135deg, #b4ec51, #00c6d1);
+  box-shadow: 0 10px 35px hsl(var(--accent) / 0.25);
+  cursor: pointer;
+  list-style: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.theme-control summary::-webkit-details-marker {
+  display: none;
+}
+
+.theme-control summary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 42px hsl(var(--accent) / 0.38);
+}
+
+.theme-control summary:focus-visible {
+  outline: 2px solid hsl(var(--heading));
+  outline-offset: 4px;
+}
+
+.theme-icon {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  box-shadow: inset -0.28rem -0.18rem 0 -0.12rem currentColor;
+}
+
+.theme-menu {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.28rem 1.8rem 0.28rem 0.28rem;
+  border: 1px solid hsl(var(--line));
+  border-radius: 999px 0 0 999px;
+  background: hsl(var(--surface) / 0.96);
+  box-shadow: 0 14px 40px hsl(0 0% 0% / 0.22);
+  transform: translateY(-50%);
+  animation: theme-menu-in 180ms ease both;
+}
+
+.theme-menu button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.48rem 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: hsl(var(--muted));
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-menu button:hover {
+  color: hsl(var(--heading));
+}
+
+.theme-menu button[aria-pressed="true"] {
+  color: #050505;
+  background: linear-gradient(135deg, #b4ec51, #00c6d1);
+}
+
+.theme-menu button:focus-visible {
+  outline: 2px solid hsl(var(--accent));
+  outline-offset: 1px;
+}
+
+@keyframes theme-menu-in {
+  from { opacity: 0; transform: translate(0.7rem, -50%); }
+  to { opacity: 1; transform: translate(0, -50%); }
+}
+
+@media (max-width: 767px) {
+  .theme-control {
+    right: 0.7rem;
+  }
+
+  .theme-control summary {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 @layer utilities {
   mt-1 {

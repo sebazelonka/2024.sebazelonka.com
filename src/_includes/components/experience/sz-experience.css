@@ -1,5 +1,5 @@
 :host {
-  padding: 1rem 0;
+  padding: 0;
 }
 
 p {
@@ -20,12 +20,27 @@ ul {
     grid-template-columns: 3fr 2fr;
     align-items: center;
     gap: 0.5rem 1rem;
-    margin-top: 2rem;
+    margin-top: 0;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid hsl(var(--line));
+    transition: border-color 180ms ease, padding-left 180ms ease;
+
+    &:hover {
+      padding-left: 0.65rem;
+      border-color: hsl(var(--accent));
+    }
 
     .company {
       display: grid;
       grid-template-columns: 2fr 3fr;
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 540px) {
+  ul li,
+  ul li .company {
+    grid-template-columns: 1fr;
   }
 }

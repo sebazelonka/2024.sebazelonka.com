@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="system">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sebastian Zelonka's personal website" />
+    <meta name="theme-color" content="#050505" />
     <title>Sebastian Zelonka</title>
+    <script webc:keep>
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (["light", "dark"].includes(savedTheme)) {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      })();
+    </script>
     <link
       rel="stylesheet"
       href="https://use.typekit.net/cne0gpf.css"
@@ -20,5 +29,54 @@
   <body class="container">
     <sz-sidebar> </sz-sidebar>
     <main @raw="content"></main>
+    <details class="theme-control">
+      <summary aria-label="Choose color theme" title="Choose color theme">
+        <span class="theme-icon" aria-hidden="true"></span>
+      </summary>
+      <div class="theme-menu" data-theme-selector role="group" aria-label="Color theme">
+        <button type="button" data-theme="system" aria-pressed="true">Auto</button>
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+      </div>
+    </details>
+    <script webc:keep>
+      (() => {
+        const root = document.documentElement;
+        const controls = document.querySelector("[data-theme-selector]");
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+        if (!controls) return;
+
+        const update = (theme, persist = true) => {
+          root.dataset.theme = theme;
+          controls.querySelectorAll("button").forEach((button) => {
+            button.setAttribute("aria-pressed", String(button.dataset.theme === theme));
+          });
+
+          const isDark = theme === "dark" || (theme === "system" && media.matches);
+          themeColor?.setAttribute("content", isDark ? "#050505" : "#f7f4ec");
+
+          if (persist) {
+            if (theme === "system") localStorage.removeItem("theme");
+            else localStorage.setItem("theme", theme);
+          }
+        };
+
+        controls.addEventListener("click", (event) => {
+          const button = event.target.closest("button[data-theme]");
+          if (button) {
+            update(button.dataset.theme);
+            controls.closest("details")?.removeAttribute("open");
+          }
+        });
+
+        media.addEventListener("change", () => {
+          if (root.dataset.theme === "system") update("system", false);
+        });
+
+        update(root.dataset.theme, false);
+      })();
+    </script>
   </body>
 </html>

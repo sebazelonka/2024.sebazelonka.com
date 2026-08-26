@@ -1,8 +1,19 @@
 :host {
   display: flex;
   flex-direction: column;
+  gap: 5rem;
 }
 
 section {
-  margin-top: 3rem;
+  margin-top: 0;
+}
+
+:host > :first-child {
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+}
+
+@media (max-width: 767px) {
+  :host {
+    gap: 3.5rem;
+  }
 }

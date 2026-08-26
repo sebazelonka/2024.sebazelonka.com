@@ -2,15 +2,16 @@
 
 <header webc:root="override">
   <div>
+    <div class="status"><span aria-hidden="true"></span> Available for selected projects</div>
     <h1>Sebastian Zelonka</h1>
-    <h2>UI Engineer</h2>
-    <p>Pixel-perfect, performant, and accessible products on the web.</p>
+    <h2>UI Engineer <span aria-hidden="true">↗</span></h2>
+    <p class="intro">Pixel-perfect, performant, and accessible products on the web.</p>
   </div>
   <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/experience">Experience</a>
-    <a href="/blog">Some Thoughts</a>
+    <a href="/"><span>01</span> Home</a>
+    <a href="/about"><span>02</span> About</a>
+    <a href="/experience"><span>03</span> Experience</a>
+    <a href="/blog"><span>04</span> Some Thoughts</a>
   </nav>
 
   <div class="social">
