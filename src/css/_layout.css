@@ -18,6 +18,10 @@
     padding-right: 3rem;
     grid-template-columns: minmax(17rem, 2fr) minmax(0, 3fr);
   }
+
+  .sz-footer {
+    grid-column: 2;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -27,7 +31,17 @@
 }
 
 @media (max-width: 767px) {
+  .container {
+    gap: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   main {
     padding-bottom: 4rem;
+  }
+
+  .sz-footer {
+    grid-column: 1;
   }
 }

@@ -39,11 +39,17 @@ blockquote footer span { display: block; margin-top: 0.2rem; font-weight: 400; o
 @media (max-width: 640px) {
   :host { padding-bottom: 3rem; }
   .resume-hero { padding-bottom: 3rem; }
+  .resume-hero h1 { font-size: clamp(2.6rem, 13vw, 4rem); }
+  .lead { margin-top: 1.5rem; font-size: 1.05rem; }
+  .hero-meta { margin-top: 1.25rem; }
   section { padding-top: 3.5rem; }
   .section-title { grid-template-columns: 1fr; gap: 0.5rem; }
+  .section-title h2 { font-size: 2.5rem; }
   .job { padding: 1.5rem 0; }
   .job::before { display: none; }
-  .job-meta { position: static; width: auto; flex-direction: row; justify-content: space-between; margin-bottom: 0.8rem; }
+  .job-meta { position: static; width: auto; flex-direction: row; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.8rem; }
+  .job-meta time { text-align: right; }
+  .job > p { font-size: 0.78rem; }
   .education { grid-template-columns: 1fr; }
   .education article, .education article:nth-child(even) { padding: 1.25rem 0; border-left: 0; }
   blockquote { margin-top: 4rem; }

@@ -12,8 +12,43 @@ section {
   font-size: clamp(1.15rem, 1.7vw, 1.45rem);
 }
 
+.home-intro h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: hsl(var(--heading));
+}
+
+.home-intro p {
+  max-width: 46rem;
+}
+
+.more-link {
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid hsl(var(--line));
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 767px) {
   :host {
     gap: 3.5rem;
+  }
+
+  .home-intro h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(2.1rem, 11vw, 3.25rem);
+  }
+
+  .home-intro p {
+    font-size: 1rem;
   }
 }

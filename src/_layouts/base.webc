@@ -30,6 +30,7 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <sz-sidebar> </sz-sidebar>
     <main id="main-content" @raw="content"></main>
+    <sz-footer></sz-footer>
     <details class="theme-control">
       <summary aria-label="Choose color theme" title="Choose color theme">
         <span class="theme-icon" aria-hidden="true"></span>
@@ -43,16 +44,18 @@
     <script webc:keep>
       (() => {
         const root = document.documentElement;
-        const controls = document.querySelector("[data-theme-selector]");
+        const controls = [...document.querySelectorAll("[data-theme-selector]")];
         const themeColor = document.querySelector('meta[name="theme-color"]');
         const media = window.matchMedia("(prefers-color-scheme: dark)");
 
-        if (!controls) return;
+        if (!controls.length) return;
 
         const update = (theme, persist = true) => {
           root.dataset.theme = theme;
-          controls.querySelectorAll("button").forEach((button) => {
-            button.setAttribute("aria-pressed", String(button.dataset.theme === theme));
+          controls.forEach((control) => {
+            control.querySelectorAll("button").forEach((button) => {
+              button.setAttribute("aria-pressed", String(button.dataset.theme === theme));
+            });
           });
 
           const isDark = theme === "dark" || (theme === "system" && media.matches);
@@ -64,12 +67,13 @@
           }
         };
 
-        controls.addEventListener("click", (event) => {
-          const button = event.target.closest("button[data-theme]");
-          if (button) {
-            update(button.dataset.theme);
-            controls.closest("details")?.removeAttribute("open");
-          }
+        controls.forEach((control) => control.addEventListener("click", (event) => {
+            const button = event.target.closest("button[data-theme]");
+            if (button) {
+              update(button.dataset.theme);
+              control.closest("details")?.removeAttribute("open");
+            }
+          })
         });
 
         media.addEventListener("change", () => {

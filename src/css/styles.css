@@ -294,13 +294,12 @@ blockquote {
 }
 
 @media (max-width: 767px) {
-  .theme-control {
-    right: 0.7rem;
+  body.menu-active {
+    overflow: hidden;
   }
 
-  .theme-control summary {
-    width: 2.75rem;
-    height: 2.75rem;
+  .theme-control {
+    display: none;
   }
 }
 
