@@ -27,8 +27,9 @@
     <!-- <style @raw="getCss(page.url)" webc:keep></style> -->
   </head>
   <body class="container">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <sz-sidebar> </sz-sidebar>
-    <main @raw="content"></main>
+    <main id="main-content" @raw="content"></main>
     <details class="theme-control">
       <summary aria-label="Choose color theme" title="Choose color theme">
         <span class="theme-icon" aria-hidden="true"></span>

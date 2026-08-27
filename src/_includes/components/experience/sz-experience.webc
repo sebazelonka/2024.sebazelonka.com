@@ -1,36 +1,89 @@
 <link rel="stylesheet" href="sz-experience.css" webc:scoped="sz-experience" />
 
-<section webc:root="override" class="experience">
-  <h2>Experience</h2>
-  <ul>
-    <li>
-      <div class="company">
-        <h4>Making Sense</h4>
-        <h4>UX Developer</h4>
-      </div>
-      <p>2021 — Present</p>
-    </li>
-    <li>
-      <div class="company">
-        <h4>ank</h4>
-        <h4>FE Developer</h4>
-      </div>
-      <p>2020 — 2021</p>
-      <div class="company">
-        <h4></h4>
-        <h4>SR UX Designer</h4>
-      </div>
-      <p>2020 — 2020</p>
-    </li>
-    <li>
-      <div class="company">
-        <h4>Increase</h4>
-        <h4>SR UX Designer</h4>
-      </div>
-      <p>2019 — 2020</p>
-    </li>
-  </ul>
-  <div class="mt-4">
-    <a href="experience">View full experience ↗</a>
+<section webc:root="override" class="experience" aria-labelledby="experience-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Selected experience</p>
+      <h2 id="experience-title">From shaping interfaces to shaping systems.</h2>
+    </div>
+    <p class="summary">
+      Over 14 years moving between design and engineering—turning product
+      decisions into accessible, scalable interfaces.
+    </p>
   </div>
+
+  <div class="career-notes" aria-label="Career highlights">
+    <div><strong>14+</strong><span>years in digital products</span></div>
+    <div><strong>03</strong><span>disciplines connected</span></div>
+    <div><strong>∞</strong><span>details that matter</span></div>
+  </div>
+
+  <ol class="timeline">
+    <li class="featured">
+      <span class="marker" aria-hidden="true">01</span>
+      <article>
+        <div class="role-heading">
+          <div>
+            <p class="company">Making Sense</p>
+            <h3>Senior Design System Engineer</h3>
+          </div>
+          <time>2021 — Present</time>
+        </div>
+        <p class="description">
+          Leading design system work across tokens, custom React components,
+          Storybook and documentation—working closely with designers to turn
+          visual language into dependable product infrastructure.
+        </p>
+        <ul class="stack" aria-label="Technologies">
+          <li>React</li><li>TypeScript</li><li>Storybook</li><li>Design tokens</li>
+        </ul>
+      </article>
+    </li>
+
+    <li>
+      <span class="marker" aria-hidden="true">02</span>
+      <article>
+        <div class="role-heading">
+          <div>
+            <p class="company">ank</p>
+            <h3>Frontend Developer · Senior UX Designer</h3>
+          </div>
+          <time>2020 — 2021</time>
+        </div>
+        <p class="description">
+          Made the jump from product design to frontend development, creating
+          shared components and helping build the QR payment experience from
+          its earliest flows through implementation.
+        </p>
+        <ul class="stack" aria-label="Technologies">
+          <li>React Native</li><li>GraphQL</li><li>TypeScript</li><li>Jest</li>
+        </ul>
+      </article>
+    </li>
+
+    <li>
+      <span class="marker" aria-hidden="true">03</span>
+      <article>
+        <div class="role-heading">
+          <div>
+            <p class="company">Increase</p>
+            <h3>Senior UX Designer</h3>
+          </div>
+          <time>2019 — 2020</time>
+        </div>
+        <p class="description">
+          Rapid prototyping and design system foundations, creating the shared
+          language that helped product and frontend teams move together.
+        </p>
+        <ul class="stack" aria-label="Technologies">
+          <li>React</li><li>Styled Components</li><li>Storybook</li>
+        </ul>
+      </article>
+    </li>
+  </ol>
+
+  <a class="resume-link" href="https://resume.sebazelonka.com/" target="_blank" rel="noreferrer noopener">
+    <span>Explore the full career</span>
+    <span aria-hidden="true">↗</span>
+  </a>
 </section>

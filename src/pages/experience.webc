@@ -2,27 +2,74 @@
 permalink: "experience/"
 ---
 
-<script webc:setup>
-  const blog = $data.collections.experience.map(({ data, url }) => ({
-    ...data,
-    url,
-  }));
-  const posts = [...blog].sort((a, b) => b.date - a.date);
-</script>
+<link rel="stylesheet" href="experience.css" webc:scoped="resume-page" />
 
-<h3>Experience</h3>
-<p>This is the full list of works</p>
+<article class="resume" webc:root="override">
+  <header class="resume-hero">
+    <p class="eyebrow">Curriculum vitae · Buenos Aires, Argentina</p>
+    <h1>Design sensitivity.<br />Engineering discipline.</h1>
+    <p class="lead">Frontend developer with a strong focus on UI, UX and accessibility.</p>
+    <p>With over 14 years of industry experience, I’m a former designer who bridges the gap between designers and developers. My interests include design systems, JAMstack, developer experience and accessibility.</p>
+    <div class="hero-meta" aria-label="Profile summary"><span>14+ years</span><span>Design systems</span><span>UI engineering</span><span>A11Y</span></div>
+  </header>
 
-<ul class="flow" role="list" webc:root="override">
-  <li webc:if="!count || index < count" webc:for="(post, index) of posts">
-    <div style="display: flex; gap: 1rem; justify-content: space-between">
-      <a :href="post.website" @text="post.company"></a>
-      <div style="display: flex">
-        <p @text="post.startDate"></p>
-        -
-        <p @text="post.endDate"></p>
-      </div>
+  <section aria-labelledby="work-title">
+    <div class="section-title"><p>01 / Career</p><h2 id="work-title">Experience</h2></div>
+    <div class="jobs">
+      <article class="job current">
+        <div class="job-meta"><span>Making Sense</span><time>Mar ’24 — Current</time></div>
+        <h3>Senior Design System Engineer</h3>
+        <p>Leading a team working on SeCO’s design system library using Shadcn UI. Defining the stack, partnering with designers on token-based UI, developing custom styles and React components, and maintaining Storybook.</p>
+        <ul class="stack"><li>Shadcn UI</li><li>Remix</li><li>TypeScript</li><li>Storybook</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta"><span>Making Sense</span><time>Nov ’22 — Feb ’24</time></div>
+        <h3>Senior Design System Engineer</h3>
+        <p>Led the team behind Vetsource’s design system library. Defined its technology, translated design tokens into UI, developed React components and Sass styles, documented the system and published packages used across product teams.</p>
+        <ul class="stack"><li>React</li><li>Vite</li><li>Sass</li><li>TypeScript</li><li>Storybook</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta"><span>Making Sense</span><time>Nov ’21 — Nov ’22</time></div>
+        <h3>UX Developer</h3>
+        <p>Worked as a bridge between developers and designers to bring design to life, focusing on the architecture and implementation of design systems.</p>
+        <ul class="stack"><li>React</li><li>HTML</li><li>CSS</li><li>TypeScript</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta"><span>ank</span><time>Sep ’20 — Oct ’21</time></div>
+        <h3>Frontend Developer</h3>
+        <p>First dedicated frontend role. Created and maintained shared components used throughout the app, and built the QR payment flow from its initial routes through the main application layout.</p>
+        <ul class="stack"><li>React Native</li><li>TypeScript</li><li>Apollo GraphQL</li><li>Node.js</li><li>Jest</li></ul>
+      </article>
+      <article class="job"><div class="job-meta"><span>ank</span><time>May ’20 — Sep ’20</time></div><h3>Senior UX Designer</h3><p>Partnered with the product team to refine and iterate on user behavior, key journeys and flows throughout the application.</p></article>
+      <article class="job"><div class="job-meta"><span>Increase</span><time>Feb ’19 — Feb ’20</time></div><h3>Web Designer</h3><p>Rapid prototyping with React and Styled Components, plus the creation and maintenance of design systems consumed by the frontend team.</p><ul class="stack"><li>React</li><li>Styled Components</li><li>Storybook</li><li>Jest</li></ul></article>
+      <article class="job"><div class="job-meta"><span>Freelance</span><time>Jan ’08 — Feb ’19</time></div><h3>UX/UI Designer</h3><p>Research and development of websites and mobile apps, including user research, rapid prototyping, mockups, visual design and frontend development.</p></article>
+      <article class="job"><div class="job-meta"><span>Dexdex</span><time>Jun ’18 — Oct ’18</time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Designed and implemented the dexdex.io and easytrade.io platform sites, including UX and UI work for Easytrade’s widget.</p></article>
+      <article class="job"><div class="job-meta"><span>Onapsis</span><time>Aug ’16 — Jun ’18</time></div><h3>UX/UI Designer</h3><p>Worked closely with product management on product definition and improving existing flows, while supporting the frontend team with hands-on HTML and CSS implementation.</p></article>
+      <article class="job"><div class="job-meta"><span>Wolox</span><time>Oct ’15 — Aug ’16</time></div><h3>Product Designer</h3><p>Defined MVPs for startups developing new products, including Green Commuter and Syrmo, and supported frontend teams with HTML and CSS implementation.</p></article>
+      <article class="job"><div class="job-meta"><span>Aquicore</span><time>Oct ’13 — Mar ’15</time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Researched and defined new functionality, prepared and discussed mockups, produced high-resolution UI work and implemented it in HTML and Less within a distributed international team.</p></article>
+      <article class="job"><div class="job-meta"><span>Zauber / Flowics</span><time>Aug ’11 — Dec ’13</time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Created HTML prototypes, designed mobile interfaces and conducted user research. Contributed to early development and products incubated in Zauber Labs, including Tribatics and Flowics.</p></article>
+      <article class="job"><div class="job-meta"><span>UTN FRBA</span><time>Jan ’12 — Dec ’12</time></div><h3>Usability & Accessibility Course Collaborator</h3><p>Coordinated agendas and worked closely with speakers and teachers on day-to-day goals.</p></article>
+      <article class="job"><div class="job-meta"><span>GlobalLogic</span><time>Sep ’10 — Aug ’11</time></div><h3>UX/UI Designer</h3><p>Worked across B2B, B2C and consumer products: HTML prototypes, iPad interfaces and CSS optimization for ecommerce platforms, including work for Intershop, Levi’s and CEB.</p></article>
+      <article class="job"><div class="job-meta"><span>GCBA</span><time>Jul ’99 — Aug ’10</time></div><h3>Disabled People Assistant</h3><p>Supported people with disabilities in Buenos Aires public schools for more than ten years.</p></article>
+      <article class="job"><div class="job-meta"><span>3nodos</span><time>Nov ’07 — Feb ’08</time></div><h3>Web Designer · Internship</h3><p>HTML, CSS and basic JavaScript development, plus Flash animation, banners and media production.</p></article>
     </div>
-    <div :log="post" @raw="post.content"></div>
-  </li>
-</ul>
+  </section>
+
+  <blockquote>
+    <p>“I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provided alternate designs to present the best possible options.”</p>
+    <footer>Alex Horan <span>Director of Product Management, Onapsis</span></footer>
+  </blockquote>
+
+  <section aria-labelledby="education-title">
+    <div class="section-title"><p>02 / Learning</p><h2 id="education-title">Education</h2></div>
+    <div class="education">
+      <article><time>2003 — 2008</time><h3>Degree in Graphic Design</h3><p>FADU · Universidad de Buenos Aires</p></article>
+      <article><time>1994 — 1998</time><h3>Bachelor’s Degree</h3><p>Escuela Superior de Comercio N° 3 “Hipólito Vieytes”</p></article>
+      <article><time>2011</time><h3>University Expert in Accessibility and Usability</h3><p>UTN FRBA · Web accessibility, usability criteria, standards and best practices for digital projects.</p></article>
+      <article><time>2010</time><h3>User-centered design methodologies</h3><p>Dr. Mariana Salgado · CIMO / Aalto University, Finland · FADU UBA</p></article>
+      <article><time>2010</time><h3>Interactive design workshop</h3><p>Coordinated by Enrique Stanziola · Research, documentation and strategies for incorporating users into design work.</p></article>
+    </div>
+  </section>
+
+  <footer class="resume-footer"><p>Want the short version?</p><a href="mailto:dev@sebazelonka.com">Let’s work together <span aria-hidden="true">↗</span></a></footer>
+</article>
