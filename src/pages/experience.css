@@ -243,19 +243,35 @@ blockquote footer span {
   .lead { margin-top: var(--space-5); }
   section { padding-top: var(--space-8); }
 
-  .jobs {
-    --marker-size: 3.25rem;
-    --timeline-gap: var(--space-2);
-    gap: var(--space-2);
-  }
+  .jobs { gap: var(--space-2); }
+
+  .jobs::before { display: none; }
 
   .job {
+    margin-left: 0;
     padding: var(--space-4);
   }
 
-  .job-meta time {
-    padding: 0.35rem;
-    font-size: 0.48rem;
+  .job-meta {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.3rem;
+  }
+
+  .job-meta time,
+  .job.current .job-meta time {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-align: left;
+    place-items: initial;
   }
 
   .job > p { margin-top: var(--space-2); }
