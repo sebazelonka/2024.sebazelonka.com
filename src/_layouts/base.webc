@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" :content="description || 'Sebastian Zelonka — UI engineer focused on design systems, frontend and accessibility.'" />
+    <meta name="description" :content="description || site.description" />
+    <link rel="canonical" :href="site.url + page.url" />
+    <meta property="og:site_name" :content="site.name" />
+    <meta property="og:type" :content="title ? 'article' : 'website'" />
+    <meta property="og:title" :content="title ? title + ' — ' + site.name : site.title" />
+    <meta property="og:description" :content="description || site.description" />
+    <meta property="og:url" :content="site.url + page.url" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" :content="title ? title + ' — ' + site.name : site.title" />
+    <meta name="twitter:description" :content="description || site.description" />
     <meta name="theme-color" content="#050505" />
     <title @text="title ? title + ' — Sebastian Zelonka' : 'Sebastian Zelonka'"></title>
     <script webc:keep>
