@@ -48,6 +48,10 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
       <article class="job"><div class="job-meta"><span>Freelance</span><time><span>Jan ’08</span><span>Feb ’19</span></time></div><h3>UX/UI Designer</h3><p>Research and development of websites and mobile apps, including user research, rapid prototyping, mockups, visual design and frontend development.</p></article>
       <article class="job"><div class="job-meta"><span>Dexdex</span><time><span>Jun ’18</span><span>Oct ’18</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Designed and implemented the dexdex.io and easytrade.io platform sites, including UX and UI work for Easytrade’s widget.</p></article>
       <article class="job"><div class="job-meta"><span>Onapsis</span><time><span>Aug ’16</span><span>Jun ’18</span></time></div><h3>UX/UI Designer</h3><p>Worked closely with product management on product definition and improving existing flows, while supporting the frontend team with hands-on HTML and CSS implementation.</p></article>
+      <blockquote>
+        <p>“I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provided alternate designs to present the best possible options.”</p>
+        <footer>Alex Horan <span>Director of Product Management, Onapsis</span></footer>
+      </blockquote>
       <article class="job"><div class="job-meta"><span>Wolox</span><time><span>Oct ’15</span><span>Aug ’16</span></time></div><h3>Product Designer</h3><p>Defined MVPs for startups developing new products, including Green Commuter and Syrmo, and supported frontend teams with HTML and CSS implementation.</p></article>
       <article class="job"><div class="job-meta"><span>Aquicore</span><time><span>Oct ’13</span><span>Mar ’15</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Researched and defined new functionality, prepared and discussed mockups, produced high-resolution UI work and implemented it in HTML and Less within a distributed international team.</p></article>
       <article class="job"><div class="job-meta"><span>Zauber / Flowics</span><time><span>Aug ’11</span><span>Dec ’13</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Created HTML prototypes, designed mobile interfaces and conducted user research. Contributed to early development and products incubated in Zauber Labs, including Tribatics and Flowics.</p></article>
@@ -57,11 +61,6 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
       <article class="job"><div class="job-meta"><span>3nodos</span><time><span>Nov ’07</span><span>Feb ’08</span></time></div><h3>Web Designer · Internship</h3><p>HTML, CSS and basic JavaScript development, plus Flash animation, banners and media production.</p></article>
     </div>
   </section>
-
-  <blockquote>
-    <p>“I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provided alternate designs to present the best possible options.”</p>
-    <footer>Alex Horan <span>Director of Product Management, Onapsis</span></footer>
-  </blockquote>
 
   <section aria-labelledby="education-title">
     <h2 id="education-title">02 / Learning</h2>

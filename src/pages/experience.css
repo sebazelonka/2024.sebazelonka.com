@@ -149,17 +149,18 @@ section { padding-top: var(--space-10); }
 }
 
 blockquote {
-  margin: var(--space-12) 0 0;
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 0 0 calc(var(--marker-size) + var(--timeline-gap));
+  padding: var(--space-5) var(--space-6);
   border: 1px solid hsl(var(--accent) / 0.2);
   border-left: 0.3rem solid hsl(var(--accent));
+  border-radius: var(--radius-sm);
   color: hsl(var(--heading));
   background: hsl(var(--accent) / 0.04);
 }
 
 blockquote p {
-  max-width: 42ch;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  max-width: 48ch;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.45;
 }
 
@@ -288,6 +289,6 @@ blockquote footer span {
     border-left: 0;
   }
 
-  blockquote { margin-top: var(--space-8); padding: var(--space-5); }
+  blockquote { margin-left: 0; padding: var(--space-4); }
   .resume-footer { margin-top: var(--space-8); }
 }
