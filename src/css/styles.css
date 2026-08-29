@@ -296,9 +296,8 @@ blockquote {
 .theme-control {
   position: fixed;
   z-index: 20;
-  top: 50%;
-  right: clamp(0.75rem, 2vw, 1.5rem);
-  transform: translateY(-50%);
+  bottom: clamp(1rem, 3vh, 1.75rem);
+  right: clamp(1rem, 2vw, 1.5rem);
 }
 
 .theme-control summary {
