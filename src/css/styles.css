@@ -4,19 +4,18 @@
 @import "_pages.css";
 
 :root {
-  --typography: 222, 14%, 67%;
-  --muted: 222, 11%, 45%;
-  --heading: 45, 29%, 97%;
-  --link: 45, 29%, 97%;
-  --accent: 184, 100%, 41%;
-  --accent-secondary: 81, 79%, 62%;
-  --signal: 81, 79%, 62%;
+  --typography: 222 14% 67%;
+  --muted: 222 11% 45%;
+  --heading: 45 29% 97%;
+  --link: 45 29% 97%;
+  --accent: 184 100% 41%;
+  --accent-secondary: 81 79% 62%;
   --brand-start: #b4ec51;
   --brand-end: #00c6d1;
   --on-brand: #050505;
-  --background: 0, 0%, 2%;
-  --surface: 0, 0%, 7%;
-  --line: 0, 0%, 18%;
+  --background: 0 0% 2%;
+  --surface: 0 0% 7%;
+  --line: 0 0% 18%;
   --font-sans: "Inter", sans-serif;
   --text-caption: 0.7rem;
   --text-small: 0.82rem;
@@ -41,54 +40,51 @@
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --typography: 225, 16%, 28%;
-    --muted: 218, 10%, 43%;
-    --heading: 228, 28%, 8%;
-    --link: 228, 28%, 8%;
-    --accent: 183, 100%, 23%;
-    --accent-secondary: 78, 100%, 21%;
-    --signal: 78, 100%, 21%;
-    --brand-start: #4b6b00;
+    --typography: 225 16% 28%;
+    --muted: 218 10% 43%;
+    --heading: 228 28% 8%;
+    --link: 228 28% 8%;
+    --accent: 183 100% 23%;
+    --accent-secondary: 78 100% 21%;
+      --brand-start: #4b6b00;
     --brand-end: #006f75;
     --on-brand: #ffffff;
-    --background: 0, 0%, 100%;
-    --surface: 220, 20%, 98%;
-    --line: 225, 12%, 82%;
+    --background: 0 0% 100%;
+    --surface: 220 20% 98%;
+    --line: 225 12% 82%;
   }
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --typography: 225, 16%, 28%;
-  --muted: 218, 10%, 43%;
-  --heading: 228, 28%, 8%;
-  --link: 228, 28%, 8%;
-  --accent: 183, 100%, 23%;
-  --accent-secondary: 78, 100%, 21%;
-  --signal: 78, 100%, 21%;
+  --typography: 225 16% 28%;
+  --muted: 218 10% 43%;
+  --heading: 228 28% 8%;
+  --link: 228 28% 8%;
+  --accent: 183 100% 23%;
+  --accent-secondary: 78 100% 21%;
   --brand-start: #4b6b00;
   --brand-end: #006f75;
   --on-brand: #ffffff;
-  --background: 0, 0%, 100%;
-  --surface: 220, 20%, 98%;
-  --line: 225, 12%, 82%;
+  --background: 0 0% 100%;
+  --surface: 220 20% 98%;
+  --line: 225 12% 82%;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --typography: 222, 14%, 67%;
-  --muted: 218, 10%, 56%;
-  --heading: 45, 29%, 97%;
-  --link: 45, 29%, 97%;
-  --accent: 184, 100%, 41%;
-  --accent-secondary: 81, 79%, 62%;
-  --signal: 81, 79%, 62%;
+  --typography: 222 14% 67%;
+  --muted: 218 10% 56%;
+  --heading: 45 29% 97%;
+  --link: 45 29% 97%;
+  --accent: 184 100% 41%;
+  --accent-secondary: 81 79% 62%;
   --brand-start: #b4ec51;
   --brand-end: #00c6d1;
   --on-brand: #050505;
-  --background: 0, 0%, 2%;
-  --surface: 0, 0%, 7%;
-  --line: 0, 0%, 18%;
+  --background: 0 0% 2%;
+  --surface: 0 0% 7%;
+  --line: 0 0% 18%;
 }
 
 html {

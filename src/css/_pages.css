@@ -6,7 +6,6 @@
 .about-copy p { font-size: clamp(1rem, 1vw, 1.1rem); }
 
 .principles,
-.focus-list,
 .writing-list,
 .til-list {
   margin: 0;
