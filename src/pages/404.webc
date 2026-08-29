@@ -1,0 +1,15 @@
+---
+permalink: 404.html
+eleventyExcludeFromCollections: true
+title: "Page not found"
+description: "This page does not exist or has moved."
+---
+
+<article class="not-found" webc:root="override">
+  <header class="page-header">
+    <p class="eyebrow">404</p>
+    <h1 class="page-title">Nothing here.</h1>
+    <p class="page-lead">The address doesn’t exist or moved somewhere else.</p>
+  </header>
+  <p><a class="text-link" href="/">Back home <span aria-hidden="true">↗</span></a></p>
+</article>
