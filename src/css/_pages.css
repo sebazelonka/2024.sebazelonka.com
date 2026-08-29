@@ -90,21 +90,6 @@
 
 .case-links a { margin-top: 0; }
 
-.focus-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-
-.focus-list li {
-  padding: 0.35rem 0.65rem;
-  border: 1px solid hsl(var(--line));
-  border-radius: 999px;
-  font-family: var(--font-sans);
-  font-size: var(--text-caption);
-  color: hsl(var(--muted));
-}
-
 .contact-panel {
   padding: var(--space-6);
   border: 1px solid hsl(var(--line));
@@ -115,6 +100,16 @@
 .contact-panel p { max-width: 50ch; }
 .contact-panel h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
 .contact-panel a { margin-top: var(--space-4); }
+
+.contact-focus {
+  margin: var(--space-6) 0 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: hsl(var(--muted));
+}
 
 .writing-list,
 .til-list { border-top: 1px solid hsl(var(--line)); }
