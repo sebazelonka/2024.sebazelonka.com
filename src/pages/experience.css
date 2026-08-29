@@ -272,7 +272,10 @@ blockquote footer span {
     letter-spacing: 0.06em;
     text-align: left;
     place-items: initial;
+    color: hsl(var(--muted));
   }
+
+  .job-meta time span { display: inline; }
 
   .job > p { margin-top: var(--space-2); }
   .stack { margin-top: var(--space-3); }
