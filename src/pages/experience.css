@@ -113,7 +113,7 @@ section { padding-top: var(--space-10); }
 }
 
 .job-meta time span { display: block; line-height: inherit; }
-.job-meta time span + span::before { content: "— "; }
+.job-meta time span + span::before { content: " — "; }
 
 .job.current .job-meta time {
   border-color: transparent;
