@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Sebastian Zelonka's personal website" />
+    <meta name="description" :content="description || 'Sebastian Zelonka — UI engineer focused on design systems, frontend and accessibility.'" />
     <meta name="theme-color" content="#050505" />
-    <title>Sebastian Zelonka</title>
+    <title @text="title ? title + ' — Sebastian Zelonka' : 'Sebastian Zelonka'"></title>
     <script webc:keep>
       (() => {
         const savedTheme = localStorage.getItem("theme");
@@ -26,11 +26,13 @@
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
     <!-- <style @raw="getCss(page.url)" webc:keep></style> -->
   </head>
-  <body class="container">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <sz-sidebar> </sz-sidebar>
-    <main id="main-content" @raw="content"></main>
-    <sz-footer></sz-footer>
+    <div class="container">
+      <sz-sidebar> </sz-sidebar>
+      <main id="main-content" @raw="content"></main>
+      <sz-footer></sz-footer>
+    </div>
     <details class="theme-control">
       <summary aria-label="Choose color theme" title="Choose color theme">
         <span class="theme-icon" aria-hidden="true"></span>
@@ -45,6 +47,7 @@
       (() => {
         const root = document.documentElement;
         const controls = [...document.querySelectorAll("[data-theme-selector]")];
+        const buttons = controls.flatMap((control) => [...control.querySelectorAll("button[data-theme]")]);
         const themeColor = document.querySelector('meta[name="theme-color"]');
         const media = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -59,7 +62,7 @@
           });
 
           const isDark = theme === "dark" || (theme === "system" && media.matches);
-          themeColor?.setAttribute("content", isDark ? "#050505" : "#f7f4ec");
+          themeColor?.setAttribute("content", isDark ? "#050505" : "#ffffff");
 
           if (persist) {
             if (theme === "system") localStorage.removeItem("theme");
@@ -67,16 +70,12 @@
           }
         };
 
-        controls.forEach((control) => control.addEventListener("click", (event) => {
-            const button = event.target.closest("button[data-theme]");
-            if (button) {
-              update(button.dataset.theme);
-              control.closest("details")?.removeAttribute("open");
-            }
-          })
-        });
+        buttons.forEach((button) => button.addEventListener("click", () => {
+          update(button.dataset.theme);
+          button.closest("details")?.removeAttribute("open");
+        }));
 
-        media.addEventListener("change", () => {
+        media.addEventListener?.("change", () => {
           if (root.dataset.theme === "system") update("system", false);
         });
 

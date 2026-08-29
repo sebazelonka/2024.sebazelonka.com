@@ -20,14 +20,13 @@
 
   <ol class="timeline">
     <li class="featured">
-      <span class="marker" aria-hidden="true">01</span>
+      <time class="marker"><span>Nov ’21</span><span>Current</span></time>
       <article>
         <div class="role-heading">
           <div>
             <p class="company">Making Sense</p>
             <h3>Senior Design System Engineer</h3>
           </div>
-          <time>2021 — Present</time>
         </div>
         <p class="description">
           Leading design system work across tokens, custom React components,
@@ -41,14 +40,13 @@
     </li>
 
     <li>
-      <span class="marker" aria-hidden="true">02</span>
+      <time class="marker"><span>May ’20</span><span>Oct ’21</span></time>
       <article>
         <div class="role-heading">
           <div>
             <p class="company">ank</p>
             <h3>Frontend Developer · Senior UX Designer</h3>
           </div>
-          <time>2020 — 2021</time>
         </div>
         <p class="description">
           Made the jump from product design to frontend development, creating
@@ -62,14 +60,13 @@
     </li>
 
     <li>
-      <span class="marker" aria-hidden="true">03</span>
+      <time class="marker"><span>Feb ’19</span><span>Feb ’20</span></time>
       <article>
         <div class="role-heading">
           <div>
             <p class="company">Increase</p>
             <h3>Senior UX Designer</h3>
           </div>
-          <time>2019 — 2020</time>
         </div>
         <p class="description">
           Rapid prototyping and design system foundations, creating the shared
@@ -82,7 +79,7 @@
     </li>
   </ol>
 
-  <a class="resume-link" href="https://resume.sebazelonka.com/" target="_blank" rel="noreferrer noopener">
+  <a class="resume-link" href="/experience/">
     <span>Explore the full career</span>
     <span aria-hidden="true">↗</span>
   </a>

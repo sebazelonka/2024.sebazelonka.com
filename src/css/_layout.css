@@ -1,21 +1,15 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   display: grid;
-
-  gap: clamp(2rem, 7vw, 7rem);
+  gap: clamp(2rem, 6vw, 5.5rem);
   min-height: 100vh;
 }
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+.container { padding-inline: clamp(1.25rem, 4vw, 3rem); }
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 3rem;
-    padding-right: 3rem;
     grid-template-columns: minmax(17rem, 2fr) minmax(0, 3fr);
   }
 
@@ -26,19 +20,17 @@
 
 @media (min-width: 1024px) {
   main {
-    padding: 6rem 0 0;
+    padding: var(--space-16) 0 0;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    gap: 1.25rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    gap: var(--space-6);
   }
 
   main {
-    padding-bottom: 4rem;
+    padding-bottom: var(--space-12);
   }
 
   .sz-footer {

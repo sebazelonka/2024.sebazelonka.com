@@ -1,5 +1,5 @@
 <section id="about" class="home-intro" webc:root="override" aria-labelledby="home-intro-title">
-  <h2 id="home-intro-title">Design background.<br />Engineering mindset.</h2>
+  <h1 id="home-intro-title">Design background.<br />Engineering mindset.</h1>
   <p>
     I’m Sebastian, a UI engineer from Buenos Aires with more than 14 years of
     experience creating digital products. I started in product design and

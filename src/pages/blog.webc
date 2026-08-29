@@ -1,21 +1,39 @@
 ---
 permalink: "blog/"
+title: "Some Thoughts"
+description: "Notes about design systems, frontend development, accessibility and product design."
 ---
 
 <script webc:setup>
-  const blog = $data.collections.posts.map(({ data, url }) => ({
-    ...data,
-    url,
-  }));
+  const blog = $data.collections.posts.map(({ data, url }) => ({ ...data, url }));
   const posts = [...blog].sort((a, b) => b.date - a.date);
+  const formatDate = (date) => date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+  const displayTag = (tags = []) => tags.find((tag) => tag !== "posts") || "Note";
 </script>
 
-<ul class="flow" role="list" webc:root="override">
-  <li webc:if="!count || index < count" webc:for="(post, index) of posts">
-    <div class="info">
-      <time @text="post.date.toLocaleDateString()"></time>
+<article class="writing-page" webc:root="override">
+  <header class="page-header">
+    <p class="eyebrow">Writing</p>
+    <h1 class="page-title">Some thoughts.</h1>
+    <p class="page-lead">Notes from the overlap between design, frontend engineering, accessibility and the systems that connect them.</p>
+  </header>
+
+  <section class="page-section" aria-labelledby="articles-title">
+    <div class="section-heading">
+      <p class="eyebrow">Archive</p>
+      <h2 id="articles-title">Articles</h2>
     </div>
-    <a :href="post.url" @text="post.title"></a>
-    <p @text="post.description"></p>
-  </li>
-</ul>
+    <ul class="writing-list" role="list">
+      <li webc:for="post of posts">
+        <div class="writing-meta">
+          <time @text="formatDate(post.date)"></time>
+          <span class="writing-tag" @text="displayTag(post.tags)"></span>
+        </div>
+        <div>
+          <a class="writing-title" :href="post.url" @text="post.title"></a>
+          <p class="writing-summary" @text="post.description"></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>

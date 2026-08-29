@@ -1,0 +1,65 @@
+---
+permalink: "about/"
+title: "About"
+description: "About Sebastian Zelonka, a UI engineer connecting design and frontend development."
+---
+
+<article class="about-page" webc:root="override">
+  <header class="page-header">
+    <p class="eyebrow">About · Buenos Aires, Argentina</p>
+    <h1 class="page-title">Design perspective.<br />Engineering practice.</h1>
+    <p class="page-lead">I’m Sebastian, a UI engineer who works between design systems, frontend architecture and accessible product experiences.</p>
+  </header>
+
+  <section class="page-section about-layout" aria-labelledby="story-title">
+    <div class="section-heading">
+      <p class="eyebrow">01 / Story</p>
+      <h2 id="story-title">A career built across disciplines.</h2>
+    </div>
+    <div class="about-copy">
+      <p>I started in graphic and product design, working on research, interaction flows and visual interfaces. Over time I moved closer to implementation because I wanted the final product to preserve the intent and care of the design.</p>
+      <p>Today I build component libraries and design systems, translate tokens into resilient UI, and help designers and engineers make decisions together. I care about the details that make an interface feel clear, fast and dependable.</p>
+    </div>
+    <ul class="principles" role="list">
+      <li><strong>Clarity first</strong><p>Reduce ambiguity in the interface, the code and the conversations around both.</p></li>
+      <li><strong>Systems over patches</strong><p>Create reusable foundations that let product teams move with confidence.</p></li>
+      <li><strong>Accessibility by default</strong><p>Treat inclusive behavior as a core product requirement, not a final check.</p></li>
+    </ul>
+  </section>
+
+  <section class="page-section selected-work" aria-labelledby="selected-work-title">
+    <div class="section-heading">
+      <p class="eyebrow">02 / Selected work</p>
+      <h2 id="selected-work-title">A system built from the foundation up.</h2>
+    </div>
+    <article class="work-card">
+      <div>
+        <p class="work-kicker">Vetsource · Kibble design system</p>
+        <h3>From a blank repository to a production component library.</h3>
+        <p>I joined before development began, helped choose the stack and delivery model, and established the component, styling, documentation and publishing foundations used by the team.</p>
+      </div>
+      <dl class="work-facts">
+        <div><dt>Contribution</dt><dd>Foundation → v2.8 era</dd></div>
+        <div><dt>Focus</dt><dd>Architecture, tokens, React and Storybook</dd></div>
+      </dl>
+      <a class="work-link" href="/work/vetsource-kibble/">Read the case study <span aria-hidden="true">↗</span></a>
+    </article>
+  </section>
+
+  <section class="page-section" aria-labelledby="focus-title">
+    <div class="section-heading">
+      <p class="eyebrow">03 / Focus</p>
+      <h2 id="focus-title">What I work on.</h2>
+    </div>
+    <ul class="focus-list" role="list">
+      <li>Design systems</li><li>React interfaces</li><li>Design tokens</li><li>Accessibility</li><li>Component APIs</li><li>Frontend architecture</li><li>Designer–developer workflows</li>
+    </ul>
+  </section>
+
+  <section class="page-section contact-panel" aria-labelledby="contact-title">
+    <p class="eyebrow">04 / Contact</p>
+    <h2 id="contact-title">Let’s make the interface hold up.</h2>
+    <p>If you’re working on a design system, a complex product UI or a team workflow that needs a stronger bridge between design and engineering, I’d be happy to talk.</p>
+    <a href="mailto:dev@sebazelonka.com">Start a conversation <span aria-hidden="true">↗</span></a>
+  </section>
+</article>

@@ -1,0 +1,117 @@
+---
+permalink: "work/vetsource-kibble/"
+title: "Kibble Design System"
+description: "How Sebastian Zelonka helped define and build the technical foundation of Vetsource's Kibble design system."
+---
+
+<article class="case-study" webc:root="override">
+  <a class="post-back" href="/about"><span aria-hidden="true">←</span> Back to about</a>
+
+  <header class="case-hero">
+    <p class="eyebrow">Selected work · Vetsource</p>
+    <h1 class="case-title">Kibble: building a design system from zero.</h1>
+    <p class="page-lead">I joined before development began and helped turn an early design-system initiative into a documented, versioned component library for product teams.</p>
+
+    <dl class="case-facts">
+      <div><dt>Role</dt><dd>Senior Design System Engineer</dd></div>
+      <div><dt>Stage</dt><dd>Pre-foundation through the v2.8 era</dd></div>
+      <div><dt>Scope</dt><dd>Architecture, components, docs and delivery</dd></div>
+    </dl>
+  </header>
+
+  <section class="case-section" aria-labelledby="context-title">
+    <div class="section-heading">
+      <p class="eyebrow">01 / Context</p>
+      <h2 id="context-title">The system before the components.</h2>
+    </div>
+    <div class="prose">
+      <p>The project needed more than a collection of reusable UI. It needed a technical model that could preserve design decisions, support different product environments and make contribution predictable for the teams using it.</p>
+      <p>My work began before the implementation phase. I helped decide the technologies, define how design tokens would become production UI, establish the component and styling architecture, and prepare the repository and Storybook foundation for the development that followed.</p>
+    </div>
+  </section>
+
+  <section class="case-section" aria-labelledby="artifact-title">
+    <div class="section-heading">
+      <p class="eyebrow">02 / Artifact</p>
+      <h2 id="artifact-title">The system in its own documentation.</h2>
+    </div>
+
+    <figure class="artifact-browser artifact-browser--wide">
+      <div class="artifact-toolbar">
+        <span class="artifact-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Kibble · Welcome</span>
+        <a href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="artifact-viewport">
+        <iframe src="https://storybook.vetsource.design/iframe.html?id=welcome--docs&viewMode=docs" title="Kibble design system welcome documentation" loading="lazy"></iframe>
+      </div>
+      <figcaption>The live introduction to Kibble and its role as Vetsource’s global design system.</figcaption>
+    </figure>
+
+    <figure class="artifact-browser artifact-browser--component">
+      <div class="artifact-toolbar">
+        <span class="artifact-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Kibble · Button</span>
+        <a href="https://storybook.vetsource.design/?path=/story/actions-button--primary" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="artifact-viewport">
+        <iframe src="https://storybook.vetsource.design/iframe.html?id=actions-button--primary&viewMode=story" title="Kibble primary button component preview" loading="lazy"></iframe>
+      </div>
+      <figcaption>A live component preview from the system rather than a recreated mockup.</figcaption>
+    </figure>
+  </section>
+
+  <section class="case-section" aria-labelledby="decisions-title">
+    <div class="section-heading">
+      <p class="eyebrow">03 / Foundation</p>
+      <h2 id="decisions-title">Decisions designed to compound.</h2>
+    </div>
+    <ol class="decision-grid">
+      <li><span class="decision-number">01</span><h3>Technology and architecture</h3><p>Selected a React and TypeScript component model, Vite-based tooling and a Sass architecture capable of serving both React and non-React products.</p></li>
+      <li><span class="decision-number">02</span><h3>Tokens into interface</h3><p>Defined the boundary between Vetsource design tokens, component styles and public APIs so visual decisions could remain consistent in implementation.</p></li>
+      <li><span class="decision-number">03</span><h3>Documentation as product</h3><p>Made Storybook the shared surface for behavior, usage guidance, accessibility expectations and collaboration between design and engineering.</p></li>
+      <li><span class="decision-number">04</span><h3>Repeatable delivery</h3><p>Established the package, versioning and publishing foundations that allowed product teams to adopt improvements incrementally.</p></li>
+    </ol>
+  </section>
+
+  <section class="case-section" aria-labelledby="milestone-title">
+    <div class="section-heading">
+      <p class="eyebrow">04 / Milestone</p>
+      <h2 id="milestone-title">A mature base by the 2.8 release.</h2>
+    </div>
+    <div class="milestone-panel">
+      <div>
+        <span class="milestone-label">Approximate final milestone</span>
+        <strong class="milestone-version">2.8.0</strong>
+        <span class="milestone-date">March 5, 2024</span>
+      </div>
+      <div>
+        <p>By this release, Kibble had grown beyond its original primitives into a broader system with reusable components, utilities and a documented contribution model.</p>
+        <ul>
+          <li>Steps, ToastProvider and reusable hooks joined the library.</li>
+          <li>Component APIs and shared media-query utilities continued to mature.</li>
+          <li>Accessibility and long-content behavior were improved across components.</li>
+          <li>The changelog made adoption and breaking changes visible to consumers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section" aria-labelledby="outcome-title">
+    <div class="section-heading">
+      <p class="eyebrow">05 / Outcome</p>
+      <h2 id="outcome-title">A foundation the team could keep extending.</h2>
+    </div>
+    <div class="prose">
+      <p>Today Kibble is presented as Vetsource’s global design system: a custom system built from scratch, supporting reusable UI for React and non-React applications, patterns and brand guidance. Its current breadth reflects the work of the Vetsource design-system team after my time on the project as well as the foundations I helped establish.</p>
+      <p>The result I value most is not a single component. It is that the architecture, documentation model and delivery workflow were durable enough for other people to continue evolving the system.</p>
+    </div>
+
+    <p class="case-note"><strong>Scope note:</strong> This case study describes my contribution from before implementation began through approximately the 2.8.0 release. The live Storybook includes substantial later work by the Vetsource team.</p>
+
+    <div class="case-links">
+      <a href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Explore the live Storybook <span aria-hidden="true">↗</span></a>
+      <a href="https://storybook.vetsource.design/?path=/docs/changelog--docs#280---march-05-2024" target="_blank" rel="noreferrer noopener">Open the 2.8.0 changelog <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</article>

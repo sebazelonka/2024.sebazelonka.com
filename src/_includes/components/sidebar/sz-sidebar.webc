@@ -4,7 +4,7 @@
   <div>
     <div class="status"><span aria-hidden="true"></span> Available for selected projects</div>
     <div class="identity">
-      <h1>Sebastian Zelonka</h1>
+      <p class="site-name">Sebastian Zelonka</p>
       <h2>UI Engineer <span aria-hidden="true">↗</span></h2>
     </div>
     <p class="intro">Pixel-perfect, performant, and accessible products on the web.</p>
@@ -22,6 +22,7 @@
       <a href="/about"><span>02</span> About</a>
       <a href="/experience"><span>03</span> Experience</a>
       <a href="/blog"><span>04</span> Some Thoughts</a>
+      <a href="/til"><span>05</span> Field Notes</a>
     </nav>
     <div class="mobile-theme" data-theme-selector role="group" aria-label="Color theme">
       <p>Appearance</p>
@@ -41,6 +42,16 @@
       const nav = header?.querySelector("nav");
       const backdrop = header?.querySelector(".menu-backdrop");
       if (!header || !toggle || !nav || !backdrop) return;
+
+      const currentPath = location.pathname.replace(/\/$/, "") || "/";
+      const activePath = currentPath.startsWith("/work/") ? "/about" : currentPath;
+      nav.querySelectorAll("a").forEach((link) => {
+        const linkPath = new URL(link.href, location.origin).pathname.replace(/\/$/, "") || "/";
+        const isCurrent = linkPath === "/"
+          ? activePath === "/"
+          : activePath === linkPath || activePath.startsWith(`${linkPath}/`);
+        if (isCurrent) link.setAttribute("aria-current", "page");
+      });
 
       const close = () => {
         header.classList.remove("menu-open");

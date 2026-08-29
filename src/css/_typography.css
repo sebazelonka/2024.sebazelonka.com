@@ -1,26 +1,18 @@
 @supports (font-size-adjust: 1) {
-  body {
-    font-size-adjust: 0.5;
-  }
+  body { font-size-adjust: 0.5; }
 }
 
 body {
-  font-size: 1.25em;
-  font-family: "elena-web-basic", serif;
+  font-family: "elena-web-basic", Georgia, serif;
+  font-size: clamp(1rem, 0.25vw + 0.95rem, 1.125rem);
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  line-height: 1.62;
 }
 
 ::selection {
   color: hsl(var(--background));
   background: hsl(var(--accent));
-}
-
-@media screen and (min-width: 48em) {
-  body {
-    font-size: calc(0.75vw + 0.95296em);
-  }
 }
 
 h1,
@@ -29,43 +21,18 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
   font-family: var(--font-sans);
-  font-weight: 700;
+  font-weight: 750;
   font-style: normal;
+  line-height: 1.08;
   color: hsl(var(--heading));
-
-  &:first-of-type {
-    margin-top: 0;
-  }
 }
 
-p {
-  line-height: calc(1ex / 0.32);
-  margin-bottom: calc(1ex / 0.32);
-}
+h1 { font-size: var(--text-display); letter-spacing: -0.055em; }
+h2 { font-size: var(--text-heading); letter-spacing: -0.04em; }
+h3 { font-size: var(--text-subheading); letter-spacing: -0.02em; }
+h4 { font-size: var(--text-body); }
 
-h1 {
-  font-size: 2.5em;
-  font-weight: 850;
-  line-height: calc(1ex / 0.42);
-  margin: calc(1ex / 0.42) 0;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: 800;
-  line-height: calc(1ex / 0.42);
-  margin: calc(1ex / 0.42) 0;
-}
-
-h3 {
-  font-size: 1.75em;
-  line-height: calc(1ex / 0.38);
-  margin: calc(1ex / 0.38) 0;
-}
-
-h4 {
-  font-size: 1.5em;
-  line-height: calc(1ex / 0.37);
-  /* margin: calc(1ex / 0.37) 0; */
-}
+p { margin: 0; }
+p + p { margin-top: var(--space-4); }

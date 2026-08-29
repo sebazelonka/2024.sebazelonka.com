@@ -1,20 +1,33 @@
 ---
 permalink: "til/"
+title: "Today I Learned"
+description: "Short field notes about frontend engineering and design systems."
 ---
 
 <script webc:setup>
-  const til = $data.collections.til.map(({ data, url }) => ({
-    ...data,
-    url,
-  }));
-  const data = [...til].sort((a, b) => b.date - a.date);
+  const notes = $data.collections.til.map(({ data, url }) => ({ ...data, url })).sort((a, b) => b.date - a.date);
+  const formatDate = (date) => date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 </script>
 
-<h2>Today I learned</h2>
-<ul class="flow" role="list" webc:root="override">
-  <li webc:if="!count || index < count" webc:for="(post, index) of data">
-
-
-    <p @raw="content"></p>
-  </li>
-</ul>
+<article class="til-page" webc:root="override">
+  <header class="page-header">
+    <p class="eyebrow">Field notes</p>
+    <h1 class="page-title">Today I learned.</h1>
+    <p class="page-lead">Small discoveries worth keeping: implementation details, useful patterns and ideas to revisit.</p>
+  </header>
+  <section class="page-section" aria-labelledby="notes-title">
+    <div class="section-heading">
+      <p class="eyebrow">Notebook</p>
+      <h2 id="notes-title">Notes</h2>
+    </div>
+    <ul class="til-list" role="list">
+      <li webc:for="note of notes">
+        <div class="writing-meta"><time @text="formatDate(note.date)"></time></div>
+        <div>
+          <a class="writing-title" :href="note.url" @text="note.title"></a>
+          <p class="writing-summary" @text="note.description"></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>
