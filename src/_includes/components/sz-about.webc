@@ -10,5 +10,5 @@
     building accessible interfaces and design systems that help teams move
     together.
   </p>
-  <a href="/about" class="more-link">More about me <span aria-hidden="true">↗</span></a>
+  <a href="/about" class="more-link text-link">More about me <span aria-hidden="true">↗</span></a>
 </section>

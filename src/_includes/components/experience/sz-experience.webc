@@ -79,7 +79,7 @@
     </li>
   </ol>
 
-  <a class="resume-link" href="/experience/">
+  <a class="resume-link text-link" href="/experience/">
     <span>Explore the full career</span>
     <span aria-hidden="true">↗</span>
   </a>

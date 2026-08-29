@@ -18,5 +18,5 @@
       <p @text="post.description"></p>
     </li>
   </ul>
-  <a class="more-link" href="/blog">All thoughts <span aria-hidden="true">↗</span></a>
+  <a class="more-link text-link" href="/blog">All thoughts <span aria-hidden="true">↗</span></a>
 </section>

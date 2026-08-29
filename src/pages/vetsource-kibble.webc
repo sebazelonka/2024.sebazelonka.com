@@ -5,7 +5,7 @@ description: "How Sebastian Zelonka helped define and build the technical founda
 ---
 
 <article class="case-study" webc:root="override">
-  <a class="post-back" href="/about"><span aria-hidden="true">←</span> Back to about</a>
+  <a class="post-back text-link" href="/about"><span aria-hidden="true">←</span> Back to about</a>
 
   <header class="case-hero">
     <p class="eyebrow">Selected work · Vetsource</p>
@@ -110,8 +110,8 @@ description: "How Sebastian Zelonka helped define and build the technical founda
     <p class="case-note"><strong>Scope note:</strong> This case study describes my contribution from before implementation began through approximately the 2.8.0 release. The live Storybook includes substantial later work by the Vetsource team.</p>
 
     <div class="case-links">
-      <a href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Explore the live Storybook <span aria-hidden="true">↗</span></a>
-      <a href="https://storybook.vetsource.design/?path=/docs/changelog--docs#280---march-05-2024" target="_blank" rel="noreferrer noopener">Open the 2.8.0 changelog <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Explore the live Storybook <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/changelog--docs#280---march-05-2024" target="_blank" rel="noreferrer noopener">Open the 2.8.0 changelog <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 </article>

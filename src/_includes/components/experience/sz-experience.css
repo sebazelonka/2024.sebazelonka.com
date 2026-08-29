@@ -150,7 +150,7 @@ h3 { margin: 0; font-size: var(--text-subheading); line-height: 1.2; color: hsl(
 
 .stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
 .stack li {
-  padding: 0.3rem 0.55rem;
+  padding: 0.35rem 0.65rem;
   border: 1px solid hsl(var(--line));
   border-radius: 999px;
   font-family: var(--font-sans);
@@ -165,13 +165,9 @@ h3 { margin: 0; font-size: var(--text-subheading); line-height: 1.2; color: hsl(
   align-items: center;
   margin: var(--space-3) 0 0 calc(var(--marker-size) + var(--timeline-gap));
   padding: var(--space-3) 0;
-  border-bottom: 1px solid hsl(var(--line));
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
+
+.resume-link:hover { border-color: hsl(var(--accent) / 0.55); }
 
 .resume-link span:last-child { font-size: 1.2rem; color: hsl(var(--accent)); }
 

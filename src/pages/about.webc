@@ -42,7 +42,7 @@ description: "About Sebastian Zelonka, a UI engineer connecting design and front
         <div><dt>Contribution</dt><dd>Foundation → v2.8 era</dd></div>
         <div><dt>Focus</dt><dd>Architecture, tokens, React and Storybook</dd></div>
       </dl>
-      <a class="work-link" href="/work/vetsource-kibble/">Read the case study <span aria-hidden="true">↗</span></a>
+      <a class="work-link text-link" href="/work/vetsource-kibble/">Read the case study <span aria-hidden="true">↗</span></a>
     </article>
   </section>
 
@@ -60,6 +60,6 @@ description: "About Sebastian Zelonka, a UI engineer connecting design and front
     <p class="eyebrow">04 / Contact</p>
     <h2 id="contact-title">Let’s make the interface hold up.</h2>
     <p>If you’re working on a design system, a complex product UI or a team workflow that needs a stronger bridge between design and engineering, I’d be happy to talk.</p>
-    <a href="mailto:dev@sebazelonka.com">Start a conversation <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="mailto:dev@sebazelonka.com">Start a conversation <span aria-hidden="true">↗</span></a>
   </section>
 </article>

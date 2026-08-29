@@ -10,7 +10,7 @@ layout: "base"
 </script>
 
 <article class="post-page" webc:root="override">
-  <a class="post-back" :href="tags.includes('til') ? '/til' : '/blog'"><span aria-hidden="true">←</span> <template @text="tags.includes('til') ? 'All field notes' : 'All thoughts'" webc:nokeep></template></a>
+  <a class="post-back text-link" :href="tags.includes('til') ? '/til' : '/blog'"><span aria-hidden="true">←</span> <template @text="tags.includes('til') ? 'All field notes' : 'All thoughts'" webc:nokeep></template></a>
   <header class="page-header">
     <p class="post-meta"><time @text="formatDate(date)"></time><span webc:if="displayTag(tags)"> · <template @text="displayTag(tags)" webc:nokeep></template></span></p>
     <h1 class="page-title" @text="title"></h1>
