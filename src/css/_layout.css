@@ -5,12 +5,14 @@
   display: grid;
   gap: clamp(2rem, 6vw, 5.5rem);
   min-height: 100vh;
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
 .container { padding-inline: clamp(1.25rem, 4vw, 3rem); }
 
 @media (min-width: 768px) {
   .container {
     grid-template-columns: minmax(17rem, 2fr) minmax(0, 3fr);
+    grid-template-rows: minmax(0, 1fr) auto;
   }
 
   .sz-footer {
