@@ -66,7 +66,10 @@
         toggle.setAttribute("aria-expanded", String(open));
         if (open) requestAnimationFrame(() => nav.querySelector("a")?.focus());
       });
-      backdrop.addEventListener("click", close);
+      backdrop.addEventListener("click", () => {
+        close();
+        toggle.focus();
+      });
       nav.addEventListener("click", (event) => {
         if (event.target.closest("a")) close();
       });
