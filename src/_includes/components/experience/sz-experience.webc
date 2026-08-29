@@ -1,16 +1,11 @@
 <link rel="stylesheet" href="sz-experience.css" webc:scoped="sz-experience" />
 
 <section webc:root="override" class="experience" aria-labelledby="experience-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Selected experience</p>
-      <h2 id="experience-title">From shaping interfaces to shaping systems.</h2>
-    </div>
-    <p class="summary">
-      Over 14 years moving between design and engineering—turning product
-      decisions into accessible, scalable interfaces.
-    </p>
-  </div>
+  <h2 id="experience-title">Selected experience</h2>
+  <p class="summary">
+    Over 14 years moving between design and engineering—turning product
+    decisions into accessible, scalable interfaces.
+  </p>
 
   <div class="career-notes" aria-label="Career highlights">
     <div><strong>14+</strong><span>years in digital products</span></div>

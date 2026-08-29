@@ -20,10 +20,8 @@ description: "How Sebastian Zelonka helped define and build the technical founda
   </header>
 
   <section class="case-section" aria-labelledby="context-title">
-    <div class="section-heading">
-      <p class="eyebrow">01 / Context</p>
-      <h2 id="context-title">The system before the components.</h2>
-    </div>
+    <h2 id="context-title">01 / Context</h2>
+
     <div class="prose">
       <p>The project needed more than a collection of reusable UI. It needed a technical model that could preserve design decisions, support different product environments and make contribution predictable for the teams using it.</p>
       <p>My work began before the implementation phase. I helped decide the technologies, define how design tokens would become production UI, establish the component and styling architecture, and prepare the repository and Storybook foundation for the development that followed.</p>
@@ -31,10 +29,7 @@ description: "How Sebastian Zelonka helped define and build the technical founda
   </section>
 
   <section class="case-section" aria-labelledby="artifact-title">
-    <div class="section-heading">
-      <p class="eyebrow">02 / Artifact</p>
-      <h2 id="artifact-title">The system in its own documentation.</h2>
-    </div>
+    <h2 id="artifact-title">02 / Artifact</h2>
 
     <figure class="artifact-browser artifact-browser--wide">
       <div class="artifact-toolbar">
@@ -62,10 +57,8 @@ description: "How Sebastian Zelonka helped define and build the technical founda
   </section>
 
   <section class="case-section" aria-labelledby="decisions-title">
-    <div class="section-heading">
-      <p class="eyebrow">03 / Foundation</p>
-      <h2 id="decisions-title">Decisions designed to compound.</h2>
-    </div>
+    <h2 id="decisions-title">03 / Foundation</h2>
+
     <ol class="decision-grid">
       <li><span class="decision-number">01</span><h3>Technology and architecture</h3><p>Selected a React and TypeScript component model, Vite-based tooling and a Sass architecture capable of serving both React and non-React products.</p></li>
       <li><span class="decision-number">02</span><h3>Tokens into interface</h3><p>Defined the boundary between Vetsource design tokens, component styles and public APIs so visual decisions could remain consistent in implementation.</p></li>
@@ -75,10 +68,8 @@ description: "How Sebastian Zelonka helped define and build the technical founda
   </section>
 
   <section class="case-section" aria-labelledby="milestone-title">
-    <div class="section-heading">
-      <p class="eyebrow">04 / Milestone</p>
-      <h2 id="milestone-title">A mature base by the 2.8 release.</h2>
-    </div>
+    <h2 id="milestone-title">04 / Milestone</h2>
+
     <div class="milestone-panel">
       <div>
         <span class="milestone-label">Approximate final milestone</span>
@@ -98,10 +89,8 @@ description: "How Sebastian Zelonka helped define and build the technical founda
   </section>
 
   <section class="case-section" aria-labelledby="outcome-title">
-    <div class="section-heading">
-      <p class="eyebrow">05 / Outcome</p>
-      <h2 id="outcome-title">A foundation the team could keep extending.</h2>
-    </div>
+    <h2 id="outcome-title">05 / Outcome</h2>
+
     <div class="prose">
       <p>Today Kibble is presented as Vetsource’s global design system: a custom system built from scratch, supporting reusable UI for React and non-React applications, patterns and brand guidance. Its current breadth reflects the work of the Vetsource design-system team after my time on the project as well as the foundations I helped establish.</p>
       <p>The result I value most is not a single component. It is that the architecture, documentation model and delivery workflow were durable enough for other people to continue evolving the system.</p>

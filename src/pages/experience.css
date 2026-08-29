@@ -3,17 +3,6 @@
   border-bottom: 1px solid hsl(var(--line));
 }
 
-.section-title > p {
-  margin: 0 0 var(--space-3);
-  font-family: var(--font-sans);
-  font-size: var(--text-caption);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: hsl(var(--accent));
-}
-
 h1 {
   max-width: 13ch;
   font-size: var(--text-display);
@@ -53,17 +42,6 @@ h1 {
 }
 
 section { padding-top: var(--space-10); }
-
-.section-title {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: end;
-  gap: var(--space-4);
-  margin-bottom: var(--space-6);
-}
-
-.section-title > p { margin: 0; }
-.section-title h2 { font-size: clamp(1.9rem, 3.2vw, 2.75rem); line-height: 0.98; }
 
 .jobs {
   --marker-size: 4rem;
@@ -264,12 +242,6 @@ blockquote footer span {
   .resume-hero { padding-bottom: var(--space-8); }
   .lead { margin-top: var(--space-5); }
   section { padding-top: var(--space-8); }
-
-  .section-title {
-    grid-template-columns: 1fr;
-    gap: var(--space-1);
-    margin-bottom: var(--space-5);
-  }
 
   .jobs {
     --marker-size: 3.25rem;

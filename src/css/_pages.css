@@ -218,7 +218,6 @@
 }
 
 .case-section { padding-top: var(--space-12); }
-.case-section .prose { margin-left: calc(30% + var(--space-6)); }
 
 .artifact-browser {
   margin: 0;
@@ -387,7 +386,6 @@
   .case-facts div { padding: var(--space-3) 0; }
   .case-facts div + div { border-top: 1px solid hsl(var(--line)); border-left: 0; }
   .case-section { padding-top: var(--space-8); }
-  .case-section .prose { margin-left: 0; }
   .artifact-viewport { height: 21rem; }
   .artifact-browser--component .artifact-viewport { height: 14rem; }
   .milestone-panel { gap: var(--space-5); padding: var(--space-5); }

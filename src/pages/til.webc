@@ -16,10 +16,7 @@ description: "Short field notes about frontend engineering and design systems."
     <p class="page-lead">Small discoveries worth keeping: implementation details, useful patterns and ideas to revisit.</p>
   </header>
   <section class="page-section" aria-labelledby="notes-title">
-    <div class="section-heading">
-      <p class="eyebrow">Notebook</p>
-      <h2 id="notes-title">Notes</h2>
-    </div>
+    <h2 id="notes-title">Notebook</h2>
     <ul class="til-list" role="list">
       <li webc:for="note of notes">
         <div class="writing-meta"><time @text="formatDate(note.date)"></time></div>

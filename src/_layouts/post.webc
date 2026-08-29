@@ -20,10 +20,7 @@ layout: "base"
   <div class="post-body prose" @raw="content"></div>
 
   <section class="post-related" aria-labelledby="related-title" webc:if="!tags.includes('til') && posts.length">
-    <div class="section-heading">
-      <p class="eyebrow">Keep reading</p>
-      <h2 id="related-title">Latest thoughts</h2>
-    </div>
+    <h2 id="related-title">Keep reading</h2>
     <ul class="writing-list" role="list">
       <li webc:for="post of posts">
         <div class="writing-meta"><time @text="formatDate(post.date)"></time></div>

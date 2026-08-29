@@ -19,10 +19,7 @@ description: "Notes about design systems, frontend development, accessibility an
   </header>
 
   <section class="page-section" aria-labelledby="articles-title">
-    <div class="section-heading">
-      <p class="eyebrow">Archive</p>
-      <h2 id="articles-title">Articles</h2>
-    </div>
+    <h2 id="articles-title">Archive</h2>
     <ul class="writing-list" role="list">
       <li webc:for="post of posts">
         <div class="writing-meta">

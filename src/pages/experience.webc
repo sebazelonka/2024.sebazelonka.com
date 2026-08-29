@@ -16,7 +16,7 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
   </header>
 
   <section aria-labelledby="work-title">
-    <div class="section-title"><p>01 / Career</p><h2 id="work-title">Experience</h2></div>
+    <h2 id="work-title">01 / Career</h2>
     <div class="jobs">
       <article class="job current">
         <div class="job-meta"><span>Making Sense</span><time><span>Mar ’24</span><span>Current</span></time></div>
@@ -64,7 +64,7 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
   </blockquote>
 
   <section aria-labelledby="education-title">
-    <div class="section-title"><p>02 / Learning</p><h2 id="education-title">Education</h2></div>
+    <h2 id="education-title">02 / Learning</h2>
     <div class="education">
       <article><time>2003 — 2008</time><h3>Degree in Graphic Design</h3><p>FADU · Universidad de Buenos Aires</p></article>
       <article><time>1994 — 1998</time><h3>Bachelor’s Degree</h3><p>Escuela Superior de Comercio N° 3 “Hipólito Vieytes”</p></article>
