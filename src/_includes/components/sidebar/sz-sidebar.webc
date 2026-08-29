@@ -2,7 +2,6 @@
 
 <header webc:root="override" data-sidebar>
   <div>
-    <div class="status"><span aria-hidden="true"></span> Available for selected projects</div>
     <div class="identity">
       <p class="site-name">Sebastian Zelonka</p>
       <h2>UI Engineer <span aria-hidden="true">↗</span></h2>
