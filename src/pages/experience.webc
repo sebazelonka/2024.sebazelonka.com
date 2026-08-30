@@ -56,14 +56,18 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
         <p>“I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provided alternate designs to present the best possible options.”</p>
         <footer>Alex Horan <span>Director of Product Management, Onapsis</span></footer>
       </blockquote>
-      <article class="job"><div class="job-meta"><span>Wolox</span><time><span>Oct ’15</span><span>Aug ’16</span></time></div><h3>Product Designer</h3><p>Defined MVPs for startups developing new products, including Green Commuter and Syrmo, and supported frontend teams with HTML and CSS implementation.</p></article>
-      <article class="job"><div class="job-meta"><span>Aquicore</span><time><span>Oct ’13</span><span>Mar ’15</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Researched and defined new functionality, prepared and discussed mockups, produced high-resolution UI work and implemented it in HTML and Less within a distributed international team.</p></article>
-      <article class="job"><div class="job-meta"><span>Zauber / Flowics</span><time><span>Aug ’11</span><span>Dec ’13</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Created HTML prototypes, designed mobile interfaces and conducted user research. Contributed to early development and products incubated in Zauber Labs, including Tribatics and Flowics.</p></article>
-      <article class="job"><div class="job-meta"><span>UTN FRBA</span><time><span>Jan ’12</span><span>Dec ’12</span></time></div><h3>Usability & Accessibility Course Collaborator</h3><p>Coordinated agendas and worked closely with speakers and teachers on day-to-day goals.</p></article>
-      <article class="job"><div class="job-meta"><span>GlobalLogic</span><time><span>Sep ’10</span><span>Aug ’11</span></time></div><h3>UX/UI Designer</h3><p>Worked across B2B, B2C and consumer products: HTML prototypes, iPad interfaces and CSS optimization for ecommerce platforms, including work for Intershop, Levi’s and CEB.</p></article>
-      <article class="job"><div class="job-meta"><span>GCBA</span><time><span>Jul ’99</span><span>Aug ’10</span></time></div><h3>Disabled People Assistant</h3><p>Supported people with disabilities in Buenos Aires public schools for more than ten years.</p></article>
-      <article class="job"><div class="job-meta"><span>3nodos</span><time><span>Nov ’07</span><span>Feb ’08</span></time></div><h3>Web Designer · Internship</h3><p>HTML, CSS and basic JavaScript development, plus Flash animation, banners and media production.</p></article>
     </div>
+
+    <h2 id="earlier-title">Earlier career</h2>
+    <ul class="earlier-list" role="list">
+      <li><div class="earlier-meta"><time>Oct ’15 — Aug ’16</time></div><p class="earlier-role">Product Designer <span>· Wolox</span></p></li>
+      <li><div class="earlier-meta"><time>Oct ’13 — Mar ’15</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Aquicore</span></p></li>
+      <li><div class="earlier-meta"><time>Aug ’11 — Dec ’13</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Zauber / Flowics</span></p></li>
+      <li><div class="earlier-meta"><time>Jan ’12 — Dec ’12</time></div><p class="earlier-role">Usability &amp; Accessibility Course Collaborator <span>· UTN FRBA</span></p></li>
+      <li><div class="earlier-meta"><time>Sep ’10 — Aug ’11</time></div><p class="earlier-role">UX/UI Designer <span>· GlobalLogic</span></p></li>
+      <li><div class="earlier-meta"><time>Jul ’99 — Aug ’10</time></div><p class="earlier-role">Disabled People Assistant <span>· GCBA</span></p></li>
+      <li><div class="earlier-meta"><time>Nov ’07 — Feb ’08</time></div><p class="earlier-role">Web Designer · Internship <span>· 3nodos</span></p></li>
+    </ul>
   </section>
 
   <section aria-labelledby="education-title">

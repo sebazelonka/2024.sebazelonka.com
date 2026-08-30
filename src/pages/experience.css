@@ -199,6 +199,40 @@ blockquote footer span {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.earlier-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.earlier-list li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.35fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: baseline;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid hsl(var(--line));
+}
+
+.earlier-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-caption);
+  color: hsl(var(--muted));
+}
+
+.earlier-role {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: hsl(var(--heading));
+}
+
+.earlier-role span {
+  font-weight: 400;
+  color: hsl(var(--muted));
+}
+
 .education article {
   padding: var(--space-5) var(--space-5) var(--space-5) 0;
   border-bottom: 1px solid hsl(var(--line));
@@ -298,6 +332,11 @@ blockquote footer span {
   .stack li { font-size: 0.65rem; }
 
   .education { grid-template-columns: 1fr; }
+
+  .earlier-list li {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
   .education article,
   .education article:nth-child(even) {
     padding: var(--space-4) 0;
