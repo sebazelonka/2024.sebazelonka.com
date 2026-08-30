@@ -2,6 +2,10 @@
 permalink: "work/vetsource-kibble/"
 title: "Kibble Design System"
 description: "How Sebastian Zelonka helped define and build the technical foundation of Vetsource's Kibble design system."
+date: 2024-03-05
+tags:
+  - posts
+  - Case study
 ---
 
 <article class="case-study" webc:root="override">
