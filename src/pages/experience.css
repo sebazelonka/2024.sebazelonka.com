@@ -205,6 +205,11 @@ blockquote footer span {
   list-style: none;
 }
 
+#earlier-title {
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+
 .earlier-list li {
   display: grid;
   grid-template-columns: minmax(7rem, 0.35fr) minmax(0, 1fr);
