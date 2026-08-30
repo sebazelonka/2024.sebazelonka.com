@@ -43,7 +43,7 @@
       if (!header || !toggle || !nav || !backdrop) return;
 
       const currentPath = location.pathname.replace(/\/$/, "") || "/";
-      const activePath = currentPath.startsWith("/work/") ? "/about" : currentPath;
+      const activePath = currentPath;
       nav.querySelectorAll("a").forEach((link) => {
         const linkPath = new URL(link.href, location.origin).pathname.replace(/\/$/, "") || "/";
         const isCurrent = linkPath === "/"

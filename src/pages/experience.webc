@@ -29,7 +29,7 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
         <h3>Senior Design System Engineer</h3>
         <p>Led the team behind Vetsource’s design system library. Defined its technology, translated design tokens into UI, developed React components and Sass styles, documented the system and published packages used across product teams.</p>
         <ul class="stack"><li>React</li><li>Vite</li><li>Sass</li><li>TypeScript</li><li>Storybook</li></ul>
-        <a class="job-link" href="/work/vetsource-kibble/">View the Kibble case study <span aria-hidden="true">↗</span></a>
+        <a class="job-link" href="/blog/kibble-design-system/">View the Kibble case study <span aria-hidden="true">↗</span></a>
       </article>
       <blockquote>
         <p>“Sebastian assisted in building the Kibble Design System from the ground floor, navigating complex challenges and solving them collaboratively across multiple teams using multiple variations of tech. During his time, he was a superstar to work with and helped lay the framework to rapidly scale and iterate the Design System. I’d recommend working with Sebastian any day!”</p>

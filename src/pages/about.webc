@@ -36,7 +36,7 @@ description: "About Sebastian Zelonka, a UI engineer connecting design and front
         <div><dt>Contribution</dt><dd>Foundation → v2.8 era</dd></div>
         <div><dt>Focus</dt><dd>Architecture, tokens, React and Storybook</dd></div>
       </dl>
-      <a class="work-link text-link" href="/work/vetsource-kibble/">Read the case study <span aria-hidden="true">↗</span></a>
+      <a class="work-link text-link" href="/blog/kibble-design-system/">Read the case study <span aria-hidden="true">↗</span></a>
     </article>
   </section>
 
