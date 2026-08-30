@@ -31,6 +31,10 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
         <ul class="stack"><li>React</li><li>Vite</li><li>Sass</li><li>TypeScript</li><li>Storybook</li></ul>
         <a class="job-link text-link" href="/work/vetsource-kibble/">View the Kibble case study <span aria-hidden="true">↗</span></a>
       </article>
+      <blockquote>
+        <p>“Sebastian assisted in building the Kibble Design System from the ground floor, navigating complex challenges and solving them collaboratively across multiple teams using multiple variations of tech. During his time, he was a superstar to work with and helped lay the framework to rapidly scale and iterate the Design System. I’d recommend working with Sebastian any day!”</p>
+        <footer>David Eisenstadt <span>Innovation &amp; Design Systems, Vetsource</span></footer>
+      </blockquote>
       <article class="job">
         <div class="job-meta"><span>Making Sense</span><time><span>Nov ’21</span><span>Nov ’22</span></time></div>
         <h3>UX Developer</h3>
