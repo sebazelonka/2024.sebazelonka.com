@@ -9,7 +9,7 @@ section {
 }
 
 :host > :first-child {
-  font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+  font-size: clamp(1.175rem, 1.2vw + 0.125rem, 1.325rem);
 }
 
 .home-intro h1 {
@@ -35,7 +35,7 @@ section {
 
   .home-intro h1 {
     margin-bottom: var(--space-4);
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(2.125rem, 10vw + 0.125rem, 3.125rem);
   }
 
   .home-intro p {

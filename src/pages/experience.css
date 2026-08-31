@@ -12,7 +12,7 @@ h1 {
 .lead {
   max-width: 35rem;
   margin-top: var(--space-6);
-  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-size: clamp(1.175rem, 1.4vw + 0.125rem, 1.375rem);
   line-height: 1.45;
   color: hsl(var(--heading));
 }
@@ -104,7 +104,7 @@ section { padding-top: var(--space-10); }
   border: 1px solid hsl(var(--line));
   border-radius: 50%;
   font-family: var(--font-sans);
-  font-size: 0.54rem;
+  font-size: 0.665rem;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
@@ -176,7 +176,7 @@ blockquote {
 
 blockquote p {
   max-width: 48ch;
-  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-size: clamp(1.175rem, 1.8vw + 0.125rem, 1.475rem);
   line-height: 1.45;
 }
 
@@ -281,7 +281,7 @@ blockquote footer span {
   gap: var(--space-4);
   margin-top: var(--space-2);
   font-family: var(--font-sans);
-  font-size: clamp(1.75rem, 4vw, 3.5rem);
+  font-size: clamp(1.875rem, 4vw + 0.125rem, 3.625rem);
   font-weight: 750;
   line-height: 1;
   letter-spacing: -0.045em;
@@ -323,7 +323,7 @@ blockquote footer span {
     border: 0;
     background: none;
     box-shadow: none;
-    font-size: 0.65rem;
+    font-size: 0.775rem;
     letter-spacing: 0.06em;
     text-align: left;
     place-items: initial;
@@ -334,7 +334,7 @@ blockquote footer span {
 
   .job > p { margin-top: var(--space-2); }
   .stack { margin-top: var(--space-3); }
-  .stack li { font-size: 0.65rem; }
+  .stack li { font-size: 0.775rem; }
 
   .education { grid-template-columns: 1fr; }
 

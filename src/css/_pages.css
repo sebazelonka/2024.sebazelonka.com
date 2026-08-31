@@ -3,7 +3,7 @@
 }
 
 .about-copy { max-width: var(--measure); }
-.about-copy p { font-size: clamp(1rem, 1vw, 1.1rem); }
+.about-copy p { font-size: clamp(1.125rem, 1vw + 0.125rem, 1.225rem); }
 
 .principles,
 .writing-list,
@@ -48,7 +48,7 @@
 
 .work-card h3 {
   max-width: 22ch;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.525rem, 2.5vw + 0.125rem, 2.125rem);
 }
 
 .work-card h3 + p {
@@ -103,7 +103,7 @@
 .contact-panel h2 {
   display: block;
   max-width: 18ch;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: clamp(1.875rem, 3vw + 0.125rem, 2.625rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
   text-transform: none;
@@ -221,7 +221,7 @@
   padding: 0 var(--space-4);
   border-bottom: 1px solid hsl(225 12% 88%);
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.805rem;
   color: hsl(220 10% 38%);
   background: hsl(220 20% 98%);
 }
@@ -263,7 +263,7 @@
   padding: var(--space-3) var(--space-4);
   border-top: 1px solid hsl(225 12% 88%);
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.805rem;
   line-height: 1.45;
   color: hsl(220 10% 38%);
   background: #ffffff;
@@ -312,7 +312,7 @@
   display: block;
   margin-top: var(--space-2);
   font-family: var(--font-sans);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.625rem, 5vw + 0.125rem, 4.125rem);
   line-height: 1;
   letter-spacing: -0.06em;
   color: hsl(var(--heading));

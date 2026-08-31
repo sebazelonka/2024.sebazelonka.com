@@ -22,7 +22,7 @@
 
 .career-notes strong {
   font-family: var(--font-sans);
-  font-size: 1.55rem;
+  font-size: 1.675rem;
   line-height: 1;
   color: transparent;
   background: linear-gradient(30deg, var(--brand-start), var(--brand-end));
@@ -76,7 +76,7 @@
   border: 1px solid hsl(var(--line));
   border-radius: 50%;
   font-family: var(--font-sans);
-  font-size: 0.54rem;
+  font-size: 0.665rem;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -147,14 +147,14 @@ h3 { margin: 0; font-size: var(--text-subheading); line-height: 1.2; color: hsl(
 
 .resume-link:hover { border-color: hsl(var(--accent) / 0.55); }
 
-.resume-link span:last-child { font-size: 1.2rem; color: hsl(var(--accent)); }
+.resume-link span:last-child { font-size: 1.325rem; color: hsl(var(--accent)); }
 
 @media (max-width: 540px) {
   :host { --marker-size: 3.35rem; --timeline-gap: var(--space-2); }
   .career-notes { grid-template-columns: 1fr; }
   .career-notes div { flex-direction: row; align-items: baseline; }
   .career-notes div + div { border-top: 1px solid hsl(var(--line)); border-left: 0; }
-  .marker { font-size: 0.48rem; }
+  .marker { font-size: 0.605rem; }
   article { padding: var(--space-4); }
   .role-heading { display: block; }
 }
