@@ -4,7 +4,7 @@ layout: "base"
 
 <script webc:setup>
   const blog = $data.collections.posts.map(({ data, url }) => ({ ...data, url }));
-  const posts = [...blog].filter(({ url }) => url !== $data.page.url).sort((a, b) => b.date - a.date).slice(0, 3);
+  const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 4);
   const formatDate = (value) => value?.toLocaleDateString?.("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) || "Field note";
   const displayTag = (values = []) => values.find((tag) => !["posts", "til"].includes(tag));
 </script>
@@ -22,7 +22,7 @@ layout: "base"
   <section class="post-related" aria-labelledby="related-title" webc:if="!tags.includes('til') && posts.length">
     <h2 id="related-title">Keep reading</h2>
     <ul class="writing-list" role="list">
-      <li webc:for="post of posts">
+      <li webc:for="post of posts" webc:if="post.url !== page.url">
         <div class="writing-meta"><time @text="formatDate(post.date)"></time></div>
         <a class="writing-title" :href="post.url" @text="post.title"></a>
       </li>
