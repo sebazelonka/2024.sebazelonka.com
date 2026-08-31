@@ -187,19 +187,10 @@
 .post-related { margin-top: var(--space-16); padding-top: var(--space-8); }
 
 .prose .artifact-browser,
-.prose .decision-grid,
-.prose .milestone-panel { margin-block: var(--space-8); }
+.prose .decision-grid { margin-block: var(--space-8); }
 
 .prose .decision-grid h3 { margin-top: 0; }
 .prose .decision-grid li + li { margin-top: 0; }
-
-.milestone-label {
-  font-family: var(--font-sans);
-  font-size: var(--text-caption);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: hsl(var(--muted));
-}
 
 .artifact-browser {
   margin: 0;
@@ -297,37 +288,6 @@
 .decision-grid h3 { font-size: var(--text-subheading); }
 .decision-grid p { margin-top: var(--space-3); font-size: var(--text-small); }
 
-.milestone-panel {
-  display: grid;
-  grid-template-columns: minmax(9rem, 0.65fr) minmax(0, 1.35fr);
-  gap: var(--space-6);
-  padding: var(--space-6);
-  border: 1px solid hsl(var(--line));
-  border-left: 0.3rem solid hsl(var(--accent));
-  border-radius: var(--radius-sm);
-  background: hsl(var(--surface));
-}
-
-.milestone-version {
-  display: block;
-  margin-top: var(--space-2);
-  font-family: var(--font-sans);
-  font-size: clamp(2.625rem, 5vw + 0.125rem, 4.125rem);
-  line-height: 1;
-  letter-spacing: -0.06em;
-  color: hsl(var(--heading));
-}
-
-.milestone-date {
-  display: block;
-  margin-top: var(--space-2);
-  font-family: var(--font-sans);
-  font-size: var(--text-caption);
-  color: hsl(var(--muted));
-}
-
-.milestone-panel ul { margin: 0; padding-left: var(--space-5); }
-.milestone-panel li + li { margin-top: var(--space-2); }
 
 .case-note {
   margin-top: var(--space-8);
@@ -362,9 +322,7 @@
   .post-related { margin-top: var(--space-12); }
   .work-card { padding: var(--space-5); }
   .work-facts,
-  .decision-grid,
-  .milestone-panel { grid-template-columns: 1fr; }
+  .decision-grid { grid-template-columns: 1fr; }
   .artifact-viewport { height: 21rem; }
   .artifact-browser--component .artifact-viewport { height: 14rem; }
-  .milestone-panel { gap: var(--space-5); padding: var(--space-5); }
 }

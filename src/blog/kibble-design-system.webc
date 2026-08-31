@@ -50,22 +50,7 @@ tags:
   </ol>
 
   <h2>A solid base by version 2.8</h2>
-  <div class="milestone-panel">
-    <div>
-      <span class="milestone-label">Approximate final milestone</span>
-      <strong class="milestone-version">2.8.0</strong>
-      <span class="milestone-date">March 5, 2024</span>
-    </div>
-    <div>
-      <p>By this release Kibble had grown past its original primitives into a broader system with reusable components, utilities and a documented contribution model.</p>
-      <ul>
-        <li>Steps, ToastProvider and reusable hooks joined the library.</li>
-        <li>Component APIs and shared media-query utilities kept maturing.</li>
-        <li>Accessibility and long-content behavior improved across components.</li>
-        <li>The changelog made adoption and breaking changes visible to consumers.</li>
-      </ul>
-    </div>
-  </div>
+  <p>I stayed on the project until around the 2.8.0 release, in March 2024. By then Kibble had grown past its original primitives into a broader system: Steps, ToastProvider and reusable hooks had joined the library, component APIs and shared media-query utilities kept maturing, and accessibility and long-content behavior improved across components. The changelog made adoption and breaking changes visible to consumers, so product teams always knew what they were getting into with each update.</p>
 
   <p>What I value the most is not a single component. It’s that the architecture, the docs and the delivery workflow were solid enough for other people to keep building on top of them after I left. In the end, I think that’s what a design system is all about.</p>
 
