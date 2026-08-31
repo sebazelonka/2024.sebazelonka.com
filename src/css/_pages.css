@@ -133,6 +133,9 @@
   border-bottom: 1px solid hsl(var(--line));
 }
 
+.writing-list li:last-child,
+.til-list li:last-child { border-bottom: 0; }
+
 @media (hover: hover) {
   .writing-list li:hover .writing-title,
   .til-list li:hover .writing-title { color: hsl(var(--accent)); }
