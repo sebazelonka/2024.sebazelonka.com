@@ -1,51 +1,50 @@
 ---
 templateKey: blog-post
-title: Eventos UX de fin de año en Argentina
+title: UX year-end events in Argentina
 date: 2018-12-06T00:55:44.799Z
 image: /img/sebazelonka.eventos-ba.png
 description: >-
-  La semana pasada asistí a dos eventos de la comunidad UX de
-  Buenos Aires. Algunas reflexiones.
+  Last week I attended two events from the Buenos Aires UX community. Some reflections.
 tags:
   - UX
 ---
 
-## Experiencia de usuario en el diseño de productos y servicios — Salón Auditorio INTI
+## User experience in product and service design — INTI Auditorium
 
 ![](/img/20181128_085608_hdr.jpg)
 
-El primero, realizado el miércoles 28 de noviembre, llevaba como nombre “Experiencia de usuario en el diseño de productos y servicios” y tuvo lugar en un nuevo escenario para el “mundo” UX. El lugar fue el INTI y la agenda del evento tuvo un excelente nivel.
+The first one took place on Wednesday, November 28, under the name "User experience in the design of products and services" and was held in a new venue for the UX "world": the INTI. The agenda had an excellent level.
 
-Expusieron **Lorena Paz, Juan Marcos Ortiz, Sebastián Betti y Eduardo Mercovich**.
+Speakers included **Lorena Paz, Juan Marcos Ortiz, Sebastián Betti and Eduardo Mercovich**.
 
-Cada uno, desde su propia visión de lo que es la Experiencia de Usuario y sus formas, enriqueció la mirada de un público nuevo, diferente al que estamos acostumbrados habitualmente como miembros de la comunidad (IDF, IxDA), ya que la mayoría de los asistentes fueron Diseñadores Industriales y en un entorno completamente diferente.
+Each of them, from their own view of what User Experience is and its shapes, enriched the perspective of a new audience, different from the one we are used to as members of the community (IxDF, IxDA), since most attendees were Industrial Designers, in a completely different environment.
 
-## UX Summit ’18 — Digital House
+## UX Summit ’18 — Digital House
 
-Ya podemos decir que es un clásico de los eventos de UX en Buenos Aires. El “UX Summit” edición 2018 estuvo a la altura y presentó nombres fuertes en todos los frentes.
+We can now say it's a classic among UX events in Buenos Aires. The 2018 edition of the "UX Summit" lived up to expectations and presented big names on all fronts.
 
-Personalmente preferí participar de dos workshops.
+Personally, I chose to attend two workshops.
 
-El primero lo dió Sof Andrade y tenía un título muuuuuy largo: “La empatía como camino hacia el diseño inclusivo: armando entrevistas para investigación en diseño de interacción”.
+The first one was given by Sof Andrade and had a reeeeeally long title: "Empathy as a path towards inclusive design: preparing interviews for interaction design research".
 
-Básicamente habló acerca de cómo preparar y llevar adelante una entrevista etnográfica. Introdujo un par de tips que pueden ser muy útiles a la hora de encarar ese desafío. Muy bueno!
+Basically, she talked about how to prepare and run an ethnographic interview. She introduced a couple of tips that can be very useful when facing that challenge. Really good!
 
 ![](/img/dtv0dyewoaaavdn.jpg-large.jpeg)
 
-El segundo workshop del que participé, lo llevaron adelante los chicos de Auth0: **Bárbara Mercedes, Fernando Carretoni y Julian Leiss**. Tenía un nombre más corto “Color Accesible”.
+The second workshop I attended was run by the folks from Auth0: **Bárbara Mercedes, Fernando Carretoni and Julian Leiss**. It had a shorter name: "Accessible Color".
 
 ![](/img/dtwocojwsaizvna.jpg-large.jpeg)
 
-Fue muy interesante ver el trabajo que están haciendo internamente para mejorar la accesibilidad de sus productos y por otro lado, para introducir a muchos en el tema de la accesibilidad web.
+It was very interesting to see the work they are doing internally to improve the accessibility of their products and, on the other hand, to introduce many people to web accessibility.
 
-## Algunas (breves) conclusiones
+## Some (brief) conclusions
 
-> Queremos que el diseño haga usable y accesible para todas las personas cada producto o servicio interactivo, sin importar el nivel de alfabetización digital y las capacidades físicas, sensoriales, e intelectuales que tengan.
+> We want design to make every interactive product or service usable and accessible for all people, regardless of their level of digital literacy and their physical, sensory, and intellectual capabilities.
 
-Me pareció muy interesante ver que en ambos eventos, esencialmente muy diferentes, se plantearon temas muy similares.
+I found it very interesting that in both events, essentially very different ones, very similar topics came up.
 
-La empatía y la inclusión (de género, cognitiva y física) fueron los temas centrales.
+Empathy and inclusion (gender, cognitive and physical) were the central themes.
 
-Creo que de a poco estamos llegando a un nivel de madurez que nos permite cada vez más pensar en un Diseño Universal, Centrado en el Usuario y sin hacer distinciones entre los diferentes tipos de usuarios y eso siempre es una buena noticia. Como dijo Lore en su charla, esto es clave en un mundo cada vez mas mediatizado por interfaces. Todos más o menos pronto, vamos a necesitarlo.
+I think we are slowly reaching a level of maturity that allows us to think more and more about Universal, User-Centered Design without making distinctions between different types of users, and that's always good news. As Lore said in her talk, this is key in a world that is increasingly mediated by interfaces. Sooner or later, we are all going to need it.
 
-La cita de arriba corresponde al [“Movimiento de Diseño Inclusivo”](http://www.disenoinclusivo.org.ar/) y tiene más de 8 años. Estamos cada vez más cerca 💪
+The quote above belongs to the ["Inclusive Design Movement"](http://www.disenoinclusivo.org.ar/) and it's more than 8 years old. We are getting closer and closer 💪
