@@ -46,7 +46,7 @@ tags:
     <li><span class="decision-number">01</span><h3>Technology and architecture</h3><p>We went with React and TypeScript for components, Vite for tooling and a Sass architecture that could also serve non-React products.</p></li>
     <li><span class="decision-number">02</span><h3>Tokens into interface</h3><p>We drew a clear line between design tokens, component styles and public APIs, so visual decisions survived the jump to code.</p></li>
     <li><span class="decision-number">03</span><h3>Documentation as product</h3><p>Storybook became the shared space for behavior, usage guidance, accessibility expectations and design–engineering collaboration.</p></li>
-    <li><span class="decision-number">04</span><h3>Repeatable delivery</h3><p>Packages, versioning and a changelog let product teams adopt improvements at their own pace, without waiting for “the big release”.</p></li>
+    <li><span class="decision-number">04</span><h3>Repeatable delivery</h3><p>Packages, versioning and a changelog let product teams adopt improvements at their own pace. I also configured all the GitLab infrastructure for our release workflows and for publishing the different packages to the company’s internal registry.</p></li>
   </ol>
 
   <h2>A solid base by version 2.8</h2>
