@@ -12,7 +12,7 @@
   <ul class="flow" role="list" webc:root="override">
     <li webc:if="!count || index < count" webc:for="(post, index) of posts">
       <div class="info">
-        <time @text="formatDate(post.date)"></time>
+        <time :datetime="post.date.toISOString()" @text="formatDate(post.date)"></time>
       </div>
       <a :href="post.url" @text="post.title"></a>
       <p @text="post.description"></p>

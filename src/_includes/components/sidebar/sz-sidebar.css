@@ -34,13 +34,21 @@
   color: hsl(var(--heading));
 }
 
+.site-name a {
+  color: inherit;
+}
+
+.site-name a:hover {
+  color: hsl(var(--accent));
+}
+
 .identity {
   display: block;
 }
 
-h2 {
+.tagline {
   font-family: var(--font-sans);
-  font-size: 0.925rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -87,7 +95,7 @@ nav a[aria-current="page"]::after {
 }
 
 nav a span {
-  font-size: 0.705rem;
+  font-size: 0.75rem;
   color: hsl(var(--muted));
 }
 
@@ -128,9 +136,9 @@ nav a span {
     font-size: clamp(1.275rem, 6vw + 0.125rem, 1.625rem);
   }
 
-  h2 {
+  .tagline {
     margin: 0;
-    font-size: 0.705rem;
+    font-size: 0.75rem;
     white-space: nowrap;
   }
 
@@ -244,7 +252,7 @@ nav a span {
     display: block;
     margin: 0 0 2rem;
     font-family: var(--font-sans);
-    font-size: 0.745rem;
+    font-size: 0.775rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -284,7 +292,7 @@ nav a span {
   .mobile-theme > p {
     margin: 0 0 0.85rem;
     font-family: var(--font-sans);
-    font-size: 0.745rem;
+    font-size: 0.775rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -302,7 +310,7 @@ nav a span {
     border: 1px solid hsl(var(--line));
     border-radius: 999px;
     font-family: var(--font-sans);
-    font-size: 0.775rem;
+    font-size: 0.825rem;
     color: hsl(var(--muted));
     background: transparent;
   }

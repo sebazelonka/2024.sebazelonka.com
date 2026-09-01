@@ -12,23 +12,23 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
     <h1>Design sensitivity.<br />Engineering discipline.</h1>
     <p class="lead">Frontend developer with a strong focus on UI, UX and accessibility.</p>
     <p>With over 14 years of industry experience, I’m a former designer who bridges the gap between designers and developers. My interests include design systems, JAMstack, developer experience and accessibility.</p>
-    <div class="hero-meta" aria-label="Profile summary"><span>14+ years</span><span>Design systems</span><span>UI engineering</span><span>A11Y</span></div>
+    <ul class="hero-meta" aria-label="Profile summary" role="list"><li>14+ years</li><li>Design systems</li><li>UI engineering</li><li>A11Y</li></ul>
   </header>
 
   <section aria-labelledby="work-title">
     <h2 id="work-title">01 / Career</h2>
     <div class="jobs">
       <article class="job current">
-        <div class="job-meta"><span>Making Sense</span><time><span>Mar ’24</span><span>Current</span></time></div>
+        <div class="job-meta"><span>Making Sense</span><span class="marker-dates"><time datetime="2024-03">Mar ’24</time><span>Current</span></span></div>
         <h3>Senior Design System Engineer</h3>
         <p>Leading a team working on SeCO’s design system library using Shadcn UI. Defining the stack, partnering with designers on token-based UI, developing custom styles and React components, and maintaining Storybook.</p>
-        <ul class="stack"><li>Shadcn UI</li><li>Remix</li><li>TypeScript</li><li>Storybook</li></ul>
+        <ul class="stack" aria-label="Technologies" role="list"><li>Shadcn UI</li><li>Remix</li><li>TypeScript</li><li>Storybook</li></ul>
       </article>
       <article class="job">
-        <div class="job-meta"><span>Making Sense</span><time><span>Nov ’22</span><span>Feb ’24</span></time></div>
+        <div class="job-meta"><span>Making Sense</span><span class="marker-dates"><time datetime="2022-11">Nov ’22</time><time datetime="2024-02">Feb ’24</time></span></div>
         <h3>Senior Design System Engineer</h3>
         <p>Led the team behind Vetsource’s design system library. Defined its technology, translated design tokens into UI, developed React components and Sass styles, documented the system and published packages used across product teams.</p>
-        <ul class="stack"><li>React</li><li>Vite</li><li>Sass</li><li>TypeScript</li><li>Storybook</li></ul>
+        <ul class="stack" aria-label="Technologies" role="list"><li>React</li><li>Vite</li><li>Sass</li><li>TypeScript</li><li>Storybook</li></ul>
         <a class="job-link" href="/blog/kibble-design-system/">View the Kibble case study <span aria-hidden="true">↗</span></a>
       </article>
       <blockquote>
@@ -36,22 +36,22 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
         <footer>David Eisenstadt <span>Innovation &amp; Design Systems, Vetsource</span></footer>
       </blockquote>
       <article class="job">
-        <div class="job-meta"><span>Making Sense</span><time><span>Nov ’21</span><span>Nov ’22</span></time></div>
+        <div class="job-meta"><span>Making Sense</span><span class="marker-dates"><time datetime="2021-11">Nov ’21</time><time datetime="2022-11">Nov ’22</time></span></div>
         <h3>UX Developer</h3>
         <p>Worked as a bridge between developers and designers to bring design to life, focusing on the architecture and implementation of design systems.</p>
-        <ul class="stack"><li>React</li><li>HTML</li><li>CSS</li><li>TypeScript</li></ul>
+        <ul class="stack" aria-label="Technologies" role="list"><li>React</li><li>HTML</li><li>CSS</li><li>TypeScript</li></ul>
       </article>
       <article class="job">
-        <div class="job-meta"><span>ank</span><time><span>Sep ’20</span><span>Oct ’21</span></time></div>
+        <div class="job-meta"><span>ank</span><span class="marker-dates"><time datetime="2020-09">Sep ’20</time><time datetime="2021-10">Oct ’21</time></span></div>
         <h3>Frontend Developer</h3>
         <p>First dedicated frontend role. Created and maintained shared components used throughout the app, and built the QR payment flow from its initial routes through the main application layout.</p>
-        <ul class="stack"><li>React Native</li><li>TypeScript</li><li>Apollo GraphQL</li><li>Node.js</li><li>Jest</li></ul>
+        <ul class="stack" aria-label="Technologies" role="list"><li>React Native</li><li>TypeScript</li><li>Apollo GraphQL</li><li>Node.js</li><li>Jest</li></ul>
       </article>
-      <article class="job"><div class="job-meta"><span>ank</span><time><span>May ’20</span><span>Sep ’20</span></time></div><h3>Senior UX Designer</h3><p>Partnered with the product team to refine and iterate on user behavior, key journeys and flows throughout the application.</p></article>
-      <article class="job"><div class="job-meta"><span>Increase</span><time><span>Feb ’19</span><span>Feb ’20</span></time></div><h3>Web Designer</h3><p>Rapid prototyping with React and Styled Components, plus the creation and maintenance of design systems consumed by the frontend team.</p><ul class="stack"><li>React</li><li>Styled Components</li><li>Storybook</li><li>Jest</li></ul></article>
-      <article class="job"><div class="job-meta"><span>Freelance</span><time><span>Jan ’08</span><span>Feb ’19</span></time></div><h3>UX/UI Designer</h3><p>Research and development of websites and mobile apps, including user research, rapid prototyping, mockups, visual design and frontend development.</p></article>
-      <article class="job"><div class="job-meta"><span>Dexdex</span><time><span>Jun ’18</span><span>Oct ’18</span></time></div><h3>UX/UI Designer · Frontend Developer</h3><p>Designed and implemented the dexdex.io and easytrade.io platform sites, including UX and UI work for Easytrade’s widget.</p></article>
-      <article class="job"><div class="job-meta"><span>Onapsis</span><time><span>Aug ’16</span><span>Jun ’18</span></time></div><h3>UX/UI Designer</h3><p>Worked closely with product management on product definition and improving existing flows, while supporting the frontend team with hands-on HTML and CSS implementation.</p></article>
+      <article class="job"><div class="job-meta"><span>ank</span><span class="marker-dates"><time datetime="2020-05">May ’20</time><time datetime="2020-09">Sep ’20</time></span></div><h3>Senior UX Designer</h3><p>Partnered with the product team to refine and iterate on user behavior, key journeys and flows throughout the application.</p></article>
+      <article class="job"><div class="job-meta"><span>Increase</span><span class="marker-dates"><time datetime="2019-02">Feb ’19</time><time datetime="2020-02">Feb ’20</time></span></div><h3>Web Designer</h3><p>Rapid prototyping with React and Styled Components, plus the creation and maintenance of design systems consumed by the frontend team.</p><ul class="stack" aria-label="Technologies" role="list"><li>React</li><li>Styled Components</li><li>Storybook</li><li>Jest</li></ul></article>
+      <article class="job"><div class="job-meta"><span>Freelance</span><span class="marker-dates"><time datetime="2008-01">Jan ’08</time><time datetime="2019-02">Feb ’19</time></span></div><h3>UX/UI Designer</h3><p>Research and development of websites and mobile apps, including user research, rapid prototyping, mockups, visual design and frontend development.</p></article>
+      <article class="job"><div class="job-meta"><span>Dexdex</span><span class="marker-dates"><time datetime="2018-06">Jun ’18</time><time datetime="2018-10">Oct ’18</time></span></div><h3>UX/UI Designer · Frontend Developer</h3><p>Designed and implemented the dexdex.io and easytrade.io platform sites, including UX and UI work for Easytrade’s widget.</p></article>
+      <article class="job"><div class="job-meta"><span>Onapsis</span><span class="marker-dates"><time datetime="2016-08">Aug ’16</time><time datetime="2018-06">Jun ’18</time></span></div><h3>UX/UI Designer</h3><p>Worked closely with product management on product definition and improving existing flows, while supporting the frontend team with hands-on HTML and CSS implementation.</p></article>
       <blockquote>
         <p>“I worked with Sebastian and depended on him to provide UX designs and workflows to ensure proposed features would both work within the existing product UI and enhance the experience of our users. Sebastian always provided clear designs and typically provided alternate designs to present the best possible options.”</p>
         <footer>Alex Horan <span>Director of Product Management, Onapsis</span></footer>
@@ -60,24 +60,24 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
 
     <h2 id="earlier-title">Earlier career</h2>
     <ul class="earlier-list" role="list">
-      <li><div class="earlier-meta"><time>Oct ’15 — Aug ’16</time></div><p class="earlier-role">Product Designer <span>· Wolox</span></p></li>
-      <li><div class="earlier-meta"><time>Oct ’13 — Mar ’15</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Aquicore</span></p></li>
-      <li><div class="earlier-meta"><time>Aug ’11 — Dec ’13</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Zauber / Flowics</span></p></li>
-      <li><div class="earlier-meta"><time>Jan ’12 — Dec ’12</time></div><p class="earlier-role">Usability &amp; Accessibility Course Collaborator <span>· UTN FRBA</span></p></li>
-      <li><div class="earlier-meta"><time>Sep ’10 — Aug ’11</time></div><p class="earlier-role">UX/UI Designer <span>· GlobalLogic</span></p></li>
-      <li><div class="earlier-meta"><time>Jul ’99 — Aug ’10</time></div><p class="earlier-role">Disabled People Assistant <span>· GCBA</span></p></li>
-      <li><div class="earlier-meta"><time>Nov ’07 — Feb ’08</time></div><p class="earlier-role">Web Designer · Internship <span>· 3nodos</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2015-10">Oct ’15</time> — <time datetime="2016-08">Aug ’16</time></div><p class="earlier-role">Product Designer <span>· Wolox</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2013-10">Oct ’13</time> — <time datetime="2015-03">Mar ’15</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Aquicore</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2011-08">Aug ’11</time> — <time datetime="2013-12">Dec ’13</time></div><p class="earlier-role">UX/UI Designer · Frontend Developer <span>· Zauber / Flowics</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2012-01">Jan ’12</time> — <time datetime="2012-12">Dec ’12</time></div><p class="earlier-role">Usability &amp; Accessibility Course Collaborator <span>· UTN FRBA</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2010-09">Sep ’10</time> — <time datetime="2011-08">Aug ’11</time></div><p class="earlier-role">UX/UI Designer <span>· GlobalLogic</span></p></li>
+      <li><div class="earlier-meta"><time datetime="1999-07">Jul ’99</time> — <time datetime="2010-08">Aug ’10</time></div><p class="earlier-role">Disabled People Assistant <span>· GCBA</span></p></li>
+      <li><div class="earlier-meta"><time datetime="2007-11">Nov ’07</time> — <time datetime="2008-02">Feb ’08</time></div><p class="earlier-role">Web Designer · Internship <span>· 3nodos</span></p></li>
     </ul>
   </section>
 
   <section aria-labelledby="education-title">
     <h2 id="education-title">02 / Learning</h2>
     <div class="education">
-      <article><time>2003 — 2008</time><h3>Degree in Graphic Design</h3><p>FADU · Universidad de Buenos Aires</p></article>
-      <article><time>1994 — 1998</time><h3>Bachelor’s Degree</h3><p>Escuela Superior de Comercio N° 3 “Hipólito Vieytes”</p></article>
-      <article><time>2011</time><h3>University Expert in Accessibility and Usability</h3><p>UTN FRBA · Web accessibility, usability criteria, standards and best practices for digital projects.</p></article>
-      <article><time>2010</time><h3>User-centered design methodologies</h3><p>Dr. Mariana Salgado · CIMO / Aalto University, Finland · FADU UBA</p></article>
-      <article><time>2010</time><h3>Interactive design workshop</h3><p>Coordinated by Enrique Stanziola · Research, documentation and strategies for incorporating users into design work.</p></article>
+      <article><div class="education-dates"><time datetime="2003">2003</time> — <time datetime="2008">2008</time></div><h3>Degree in Graphic Design</h3><p>FADU · Universidad de Buenos Aires</p></article>
+      <article><div class="education-dates"><time datetime="1994">1994</time> — <time datetime="1998">1998</time></div><h3>Bachelor’s Degree</h3><p>Escuela Superior de Comercio N° 3 “Hipólito Vieytes”</p></article>
+      <article><div class="education-dates"><time datetime="2011">2011</time></div><h3>University Expert in Accessibility and Usability</h3><p>UTN FRBA · Web accessibility, usability criteria, standards and best practices for digital projects.</p></article>
+      <article><div class="education-dates"><time datetime="2010">2010</time></div><h3>User-centered design methodologies</h3><p>Dr. Mariana Salgado · CIMO / Aalto University, Finland · FADU UBA</p></article>
+      <article><div class="education-dates"><time datetime="2010">2010</time></div><h3>Interactive design workshop</h3><p>Coordinated by Enrique Stanziola · Research, documentation and strategies for incorporating users into design work.</p></article>
     </div>
   </section>
 

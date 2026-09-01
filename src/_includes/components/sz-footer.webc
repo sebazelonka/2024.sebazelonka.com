@@ -7,7 +7,7 @@
     padding: 2rem 0 3rem;
     border-top: 1px solid hsl(var(--line));
     font-family: var(--font-sans);
-    font-size: 0.775rem;
+    font-size: 0.85rem;
     color: hsl(var(--muted));
   }
   p { margin: 0; }
@@ -21,9 +21,9 @@
 <footer webc:root="override">
   <p>© Sebastian Zelonka</p>
   <nav aria-label="Social links">
-    <a href="https://www.linkedin.com/in/sebastianzelonka/" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
-    <a href="https://github.com/sebazelonka" target="_blank" rel="noreferrer noopener">GitHub ↗</a>
-    <a href="https://mastodon.social/@sebazelonka" target="_blank" rel="noreferrer noopener">Mastodon ↗</a>
-    <a href="https://twitter.com/sebazelonka" target="_blank" rel="noreferrer noopener">X ↗</a>
+    <a href="https://www.linkedin.com/in/sebastianzelonka/" target="_blank" rel="noreferrer noopener">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
+    <a href="https://github.com/sebazelonka" target="_blank" rel="noreferrer noopener">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
+    <a href="https://mastodon.social/@sebazelonka" target="_blank" rel="noreferrer noopener">Mastodon <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
+    <a href="https://twitter.com/sebazelonka" target="_blank" rel="noreferrer noopener">X <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
   </nav>
 </footer>

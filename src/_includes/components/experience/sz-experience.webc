@@ -7,15 +7,15 @@
     decisions into accessible, scalable interfaces.
   </p>
 
-  <div class="career-notes" aria-label="Career highlights">
-    <div><strong>14+</strong><span>years in digital products</span></div>
-    <div><strong>03</strong><span>disciplines connected</span></div>
-    <div><strong>∞</strong><span>details that matter</span></div>
-  </div>
+  <ul class="career-notes" aria-label="Career highlights" role="list">
+    <li><strong>14+</strong><span>years in digital products</span></li>
+    <li><strong>03</strong><span>disciplines connected</span></li>
+    <li><strong>∞</strong><span>details that matter</span></li>
+  </ul>
 
   <ol class="timeline">
     <li class="featured">
-      <time class="marker"><span>Mar ’24</span><span>Current</span></time>
+      <span class="marker"><time datetime="2024-03">Mar ’24</time><span>Current</span></span>
       <article>
         <div class="role-heading">
           <div>
@@ -28,14 +28,14 @@
           Storybook and documentation—working closely with designers to turn
           visual language into dependable product infrastructure.
         </p>
-        <ul class="stack" aria-label="Technologies">
+        <ul class="stack" aria-label="Technologies" role="list">
           <li>React</li><li>TypeScript</li><li>Storybook</li><li>Design tokens</li>
         </ul>
       </article>
     </li>
 
     <li>
-      <time class="marker"><span>May ’20</span><span>Oct ’21</span></time>
+      <span class="marker"><time datetime="2020-05">May ’20</time><time datetime="2021-10">Oct ’21</time></span>
       <article>
         <div class="role-heading">
           <div>
@@ -48,14 +48,14 @@
           shared components and helping build the QR payment experience from
           its earliest flows through implementation.
         </p>
-        <ul class="stack" aria-label="Technologies">
+        <ul class="stack" aria-label="Technologies" role="list">
           <li>React Native</li><li>GraphQL</li><li>TypeScript</li><li>Jest</li>
         </ul>
       </article>
     </li>
 
     <li>
-      <time class="marker"><span>Feb ’19</span><span>Feb ’20</span></time>
+      <span class="marker"><time datetime="2019-02">Feb ’19</time><time datetime="2020-02">Feb ’20</time></span>
       <article>
         <div class="role-heading">
           <div>
@@ -67,7 +67,7 @@
           Rapid prototyping and design system foundations, creating the shared
           language that helped product and frontend teams move together.
         </p>
-        <ul class="stack" aria-label="Technologies">
+        <ul class="stack" aria-label="Technologies" role="list">
           <li>React</li><li>Styled Components</li><li>Storybook</li>
         </ul>
       </article>
