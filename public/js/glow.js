@@ -82,7 +82,7 @@ let gpu = null;
 async function start() {
   if (!canvas || running) return;
   running = true;
-  const { clock, effect, frameLoop, init, surface } = await import(
+  const { effect, frameLoop, init, surface } = await import(
     "/js/vendor/vgpu.esm.js"
   );
   gpu = await init();
@@ -121,9 +121,11 @@ async function start() {
     applyTheme
   );
 
-  const time = clock(gpu);
+  // Drive the animation from wall-clock time (seconds into the UTC day) so the
+  // phase survives page navigations: the blobs are always where they should be.
+  // f32 precision at 86 400 s is ~8 ms — plenty for this drift.
   frameLoop(gpu, (frame) => {
-    shader.set({ params: { time: time.time } });
+    shader.set({ params: { time: (Date.now() / 1000) % 86400 } });
     frame.pass(output, shader);
   });
 
