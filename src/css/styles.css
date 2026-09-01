@@ -225,7 +225,6 @@ main:focus {
 
 .page-header {
   padding-bottom: var(--space-8);
-  border-bottom: 1px solid hsl(var(--line));
 }
 
 .eyebrow {
