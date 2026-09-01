@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: 3 Facts About UX Everybody Should Know
 date: 2016-09-09
-image: /img/sebazelonka.facts.png
 description: >-
   Debunking some common UX myths within the software development industry.
 tags:

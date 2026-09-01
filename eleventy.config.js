@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("src/css/*");
-  eleventyConfig.addPassthroughCopy({ public: "public" });
+  eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
 
   return {

@@ -21,7 +21,7 @@ tags:
     <div class="artifact-toolbar">
       <span class="artifact-dots" aria-hidden="true"><i></i><i></i><i></i></span>
       <span>Kibble · Welcome</span>
-      <a href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span></a>
+      <a href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
     </div>
     <div class="artifact-viewport">
       <iframe src="https://storybook.vetsource.design/iframe.html?id=welcome--docs&viewMode=docs" title="Kibble design system welcome documentation" loading="lazy"></iframe>
@@ -33,7 +33,7 @@ tags:
     <div class="artifact-toolbar">
       <span class="artifact-dots" aria-hidden="true"><i></i><i></i><i></i></span>
       <span>Kibble · Button</span>
-      <a href="https://storybook.vetsource.design/?path=/story/actions-button--primary" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span></a>
+      <a href="https://storybook.vetsource.design/?path=/story/actions-button--primary" target="_blank" rel="noreferrer noopener">Open <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
     </div>
     <div class="artifact-viewport">
       <iframe src="https://storybook.vetsource.design/iframe.html?id=actions-button--primary&viewMode=story" title="Kibble primary button component preview" loading="lazy"></iframe>
@@ -57,7 +57,7 @@ tags:
   <p class="case-note"><strong>Scope note:</strong> This post covers my contribution from before implementation began through approximately the 2.8.0 release. The live Storybook includes substantial later work by the Vetsource team.</p>
 
   <div class="case-links">
-    <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Explore the live Storybook <span aria-hidden="true">↗</span></a>
-    <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/changelog--docs#280---march-05-2024" target="_blank" rel="noreferrer noopener">Open the 2.8.0 changelog <span aria-hidden="true">↗</span></a>
+    <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/welcome--docs" target="_blank" rel="noreferrer noopener">Explore the live Storybook <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
+    <a class="text-link" href="https://storybook.vetsource.design/?path=/docs/changelog--docs#280---march-05-2024" target="_blank" rel="noreferrer noopener">Open the 2.8.0 changelog <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
   </div>
 </div>

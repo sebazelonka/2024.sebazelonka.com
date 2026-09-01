@@ -23,7 +23,7 @@ description: "Notes about design systems, frontend development, accessibility an
     <ul class="writing-list" role="list">
       <li webc:for="post of posts">
         <div class="writing-meta">
-          <time @text="formatDate(post.date)"></time>
+          <time :datetime="post.date.toISOString()" @text="formatDate(post.date)"></time>
           <span class="writing-tag" @text="displayTag(post.tags)"></span>
         </div>
         <div>

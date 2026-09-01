@@ -19,7 +19,7 @@ description: "Short field notes about frontend engineering and design systems."
     <h2 id="notes-title">Notebook</h2>
     <ul class="til-list" role="list">
       <li webc:for="note of notes">
-        <div class="writing-meta"><time @text="formatDate(note.date)"></time></div>
+          <div class="writing-meta"><time :datetime="note.date.toISOString()" @text="formatDate(note.date)"></time></div>
         <div>
           <a class="writing-title" :href="note.url" @text="note.title"></a>
           <p class="writing-summary" @text="note.description"></p>

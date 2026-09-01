@@ -14,11 +14,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: var(--space-6) 0 var(--space-8);
+  padding: 0;
+  list-style: none;
   border-block: 1px solid hsl(var(--line));
 }
 
-.career-notes div { display: flex; flex-direction: column; gap: 0.3rem; padding: var(--space-4); }
-.career-notes div + div { border-left: 1px solid hsl(var(--line)); }
+.career-notes li { display: flex; flex-direction: column; gap: 0.3rem; padding: var(--space-4); }
+.career-notes li + li { border-left: 1px solid hsl(var(--line)); }
 
 .career-notes strong {
   font-family: var(--font-sans);
@@ -76,7 +78,7 @@
   border: 1px solid hsl(var(--line));
   border-radius: 50%;
   font-family: var(--font-sans);
-  font-size: 0.665rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -84,8 +86,8 @@
   background: hsl(var(--background));
 }
 
-.marker span { display: block; }
-.marker span + span::before { content: "— "; }
+.marker > * { display: block; }
+.marker > * + *::before { content: "— "; }
 
 .featured .marker {
   border: 0;
@@ -152,9 +154,9 @@ h3 { margin: 0; font-size: var(--text-subheading); line-height: 1.2; color: hsl(
 @media (max-width: 540px) {
   :host { --marker-size: 3.35rem; --timeline-gap: var(--space-2); }
   .career-notes { grid-template-columns: 1fr; }
-  .career-notes div { flex-direction: row; align-items: baseline; }
-  .career-notes div + div { border-top: 1px solid hsl(var(--line)); border-left: 0; }
-  .marker { font-size: 0.605rem; }
+  .career-notes li { flex-direction: row; align-items: baseline; }
+  .career-notes li + li { border-top: 1px solid hsl(var(--line)); border-left: 0; }
+  .marker { font-size: 0.7rem; }
   article { padding: var(--space-4); }
   .role-heading { display: block; }
 }

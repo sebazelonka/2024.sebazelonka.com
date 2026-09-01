@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: New Site
 date: 2018-12-11T18:41:58.553Z
-image: /img/sebazelonka.new-site.png
 description: >-
   During the last few months I had more free time, spent it learning React and this new site is the result.
 tags:

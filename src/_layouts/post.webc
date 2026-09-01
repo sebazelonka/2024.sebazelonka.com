@@ -7,12 +7,24 @@ layout: "base"
   const posts = [...blog].sort((a, b) => b.date - a.date).slice(0, 4);
   const formatDate = (value) => value?.toLocaleDateString?.("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) || "Field note";
   const displayTag = (values = []) => values.find((tag) => !["posts", "til"].includes(tag));
+  const jsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    datePublished: date?.toISOString?.(),
+    url: site.url + page.url,
+    mainEntityOfPage: site.url + page.url,
+    author: { '@type': 'Person', name: site.name, url: site.url },
+    publisher: { '@type': 'Person', name: site.name, url: site.url },
+  });
 </script>
 
 <article class="post-page" webc:root="override">
+  <script type="application/ld+json" webc:keep @raw="jsonLd"></script>
   <a class="post-back text-link" :href="tags.includes('til') ? '/til' : '/blog'"><span aria-hidden="true">←</span> <template @text="tags.includes('til') ? 'All field notes' : 'All thoughts'" webc:nokeep></template></a>
   <header class="page-header">
-    <p class="post-meta"><time @text="formatDate(date)"></time><span webc:if="displayTag(tags)"> · <template @text="displayTag(tags)" webc:nokeep></template></span></p>
+    <p class="post-meta"><time :datetime="date?.toISOString?.()" @text="formatDate(date)"></time><span webc:if="displayTag(tags)"> · <template @text="displayTag(tags)" webc:nokeep></template></span></p>
     <h1 class="page-title" @text="title"></h1>
     <p class="page-lead" webc:if="description" @text="description"></p>
   </header>
@@ -23,7 +35,7 @@ layout: "base"
     <h2 id="related-title">Keep reading</h2>
     <ul class="writing-list" role="list">
       <li webc:for="post of posts" webc:if="post.url !== page.url">
-        <div class="writing-meta"><time @text="formatDate(post.date)"></time></div>
+        <div class="writing-meta"><time :datetime="post.date.toISOString()" @text="formatDate(post.date)"></time></div>
         <a class="writing-title" :href="post.url" @text="post.title"></a>
       </li>
     </ul>

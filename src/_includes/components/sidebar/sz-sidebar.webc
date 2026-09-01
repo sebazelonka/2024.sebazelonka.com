@@ -1,10 +1,24 @@
 <link rel="stylesheet" href="sz-sidebar.css" webc:scoped="sz-sidebar" />
 
+<script webc:setup>
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/experience", label: "Experience" },
+    { href: "/blog", label: "Some Thoughts" },
+    { href: "/til", label: "Field Notes" },
+  ];
+  const links = navLinks.map((link, index) => ({
+    ...link,
+    number: String(index + 1).padStart(2, "0"),
+  }));
+</script>
+
 <header webc:root="override" data-sidebar>
   <div>
     <div class="identity">
-      <p class="site-name">Sebastian Zelonka</p>
-      <h2>UI Engineer <span aria-hidden="true">↗</span></h2>
+      <p class="site-name"><a href="/">Sebastian Zelonka</a></p>
+      <p class="tagline">UI Engineer</p>
     </div>
     <p class="intro">Pixel-perfect, performant, and accessible products on the web.</p>
   </div>
@@ -17,11 +31,7 @@
   <div class="navigation-panel" id="navigation-panel">
     <p class="panel-label">Navigation</p>
     <nav aria-label="Primary navigation">
-      <a href="/"><span>01</span> Home</a>
-      <a href="/about"><span>02</span> About</a>
-      <a href="/experience"><span>03</span> Experience</a>
-      <a href="/blog"><span>04</span> Some Thoughts</a>
-      <a href="/til"><span>05</span> Field Notes</a>
+      <a webc:for="link of links" :href="link.href"><span @text="link.number"></span> <template @text="link.label" webc:nokeep></template></a>
     </nav>
     <div class="mobile-theme" data-theme-selector role="group" aria-label="Color theme">
       <p>Appearance</p>
@@ -43,12 +53,11 @@
       if (!header || !toggle || !nav || !backdrop) return;
 
       const currentPath = location.pathname.replace(/\/$/, "") || "/";
-      const activePath = currentPath;
       nav.querySelectorAll("a").forEach((link) => {
         const linkPath = new URL(link.href, location.origin).pathname.replace(/\/$/, "") || "/";
         const isCurrent = linkPath === "/"
-          ? activePath === "/"
-          : activePath === linkPath || activePath.startsWith(`${linkPath}/`);
+          ? currentPath === "/"
+          : currentPath === linkPath || currentPath.startsWith(`${linkPath}/`);
         if (isCurrent) link.setAttribute("aria-current", "page");
       });
 
@@ -56,6 +65,7 @@
         header.classList.remove("menu-open");
         document.body.classList.remove("menu-active");
         toggle.setAttribute("aria-expanded", "false");
+        document.querySelectorAll("main, footer, .theme-control, .skip-link").forEach((el) => el.removeAttribute("inert"));
       };
 
       toggle.addEventListener("click", () => {
@@ -63,6 +73,7 @@
         header.classList.toggle("menu-open", open);
         document.body.classList.toggle("menu-active", open);
         toggle.setAttribute("aria-expanded", String(open));
+        document.querySelectorAll("main, footer, .theme-control, .skip-link").forEach((el) => el.toggleAttribute("inert", open));
         if (open) requestAnimationFrame(() => nav.querySelector("a")?.focus());
       });
       backdrop.addEventListener("click", () => {

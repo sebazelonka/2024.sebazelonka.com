@@ -4,18 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" :content="description || site.description" />
+    <meta name="robots" content="noindex" webc:if="noindex" webc:keep />
     <link rel="canonical" :href="site.url + page.url" />
     <link rel="alternate" type="application/rss+xml" :title="site.title" :href="site.url + '/feed.xml'" />
+    <link rel="icon" type="image/png" href="/favicon.png" webc:keep />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" webc:keep />
     <meta property="og:site_name" :content="site.name" />
     <meta property="og:type" :content="title ? 'article' : 'website'" />
     <meta property="og:title" :content="title ? title + ' — ' + site.name : site.title" />
     <meta property="og:description" :content="description || site.description" />
     <meta property="og:url" :content="site.url + page.url" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" :content="site.url + (image || '/og-default.png')" webc:keep />
+    <meta property="article:published_time" :content="date?.toISOString?.()" webc:if="date" webc:keep />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" :content="title ? title + ' — ' + site.name : site.title" />
     <meta name="twitter:description" :content="description || site.description" />
+    <meta name="twitter:image" :content="site.url + (image || '/og-default.png')" webc:keep />
     <meta name="theme-color" content="#050505" />
-    <title @text="title ? title + ' — Sebastian Zelonka' : 'Sebastian Zelonka'"></title>
+    <title @text="title ? title + ' — Sebastian Zelonka' : site.title"></title>
     <script webc:keep>
       (() => {
         const savedTheme = localStorage.getItem("theme");
@@ -30,17 +36,16 @@
       href="https://use.typekit.net/cne0gpf.css"
       webc:keep
     />
-    <link rel="preconnect" href="https://rsms.me/" webc:keep />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
     <!-- <style @raw="getCss(page.url)" webc:keep></style> -->
   </head>
   <body>
+    <canvas class="glow-canvas" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="container">
       <sz-sidebar> </sz-sidebar>
-      <main id="main-content" @raw="content"></main>
+      <main id="main-content" tabindex="-1" @raw="content"></main>
       <sz-footer></sz-footer>
     </div>
     <details class="theme-control">
@@ -89,8 +94,24 @@
           if (root.dataset.theme === "system") update("system", false);
         });
 
+        const details = document.querySelector("details.theme-control");
+        const closeMenu = () => {
+          if (!details?.open) return;
+          details.removeAttribute("open");
+          details.querySelector("summary")?.focus();
+        };
+        document.addEventListener("click", (event) => {
+          if (details?.open && !details.contains(event.target)) details.removeAttribute("open");
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeMenu();
+        });
+
         update(root.dataset.theme, false);
       })();
+    </script>
+    <script type="module" webc:keep>
+      import "/js/glow.js";
     </script>
   </body>
 </html>

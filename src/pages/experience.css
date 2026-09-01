@@ -1,23 +1,4 @@
-.resume-hero {
-  padding-bottom: var(--space-10);
-  border-bottom: 1px solid hsl(var(--line));
-}
-
-h1 {
-  max-width: 13ch;
-  font-size: var(--text-display);
-  line-height: 0.94;
-}
-
-.lead {
-  max-width: 35rem;
-  margin-top: var(--space-6);
-  font-size: clamp(1.175rem, 1.4vw + 0.125rem, 1.375rem);
-  line-height: 1.45;
-  color: hsl(var(--heading));
-}
-
-.resume-hero > p:not(.eyebrow, .lead) {
+.resume-hero > p:not(.eyebrow, .page-lead) {
   max-width: var(--measure);
   margin-top: var(--space-3);
   font-size: var(--text-small);
@@ -27,10 +8,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  margin-top: var(--space-5);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.hero-meta span,
+.hero-meta li,
 .stack li {
   padding: 0.35rem 0.65rem;
   border: 1px solid hsl(var(--line));
@@ -83,7 +66,7 @@ section { padding-top: var(--space-10); }
   line-height: 1.2;
 }
 
-.job-meta > span {
+.job-meta > span:not(.marker-dates) {
   font-size: var(--text-caption);
   font-weight: 750;
   letter-spacing: 0.08em;
@@ -91,7 +74,7 @@ section { padding-top: var(--space-10); }
   color: hsl(var(--accent));
 }
 
-.job-meta time {
+.job-meta .marker-dates {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -104,7 +87,7 @@ section { padding-top: var(--space-10); }
   border: 1px solid hsl(var(--line));
   border-radius: 50%;
   font-family: var(--font-sans);
-  font-size: 0.665rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
@@ -112,10 +95,10 @@ section { padding-top: var(--space-10); }
   background: hsl(var(--background));
 }
 
-.job-meta time span { display: block; line-height: inherit; }
-.job-meta time span + span::before { content: " — "; }
+.job-meta .marker-dates > * { display: block; line-height: inherit; }
+.job-meta .marker-dates > * + *::before { content: " — "; }
 
-.job.current .job-meta time {
+.job.current .job-meta .marker-dates {
   border-color: transparent;
   color: var(--on-brand);
   background: linear-gradient(135deg, var(--brand-start), var(--brand-end));
@@ -248,7 +231,7 @@ blockquote footer span {
   border-left: 1px solid hsl(var(--line));
 }
 
-.education time {
+.education-dates {
   display: block;
   margin-bottom: var(--space-2);
   font-family: var(--font-sans);
@@ -294,8 +277,6 @@ blockquote footer span {
 }
 
 @media (max-width: 767px) {
-  .resume-hero { padding-bottom: var(--space-8); }
-  .lead { margin-top: var(--space-5); }
   section { padding-top: var(--space-8); }
 
   .jobs { gap: var(--space-2); }
@@ -313,8 +294,8 @@ blockquote footer span {
     gap: 0.3rem;
   }
 
-  .job-meta time,
-  .job.current .job-meta time {
+  .job-meta .marker-dates,
+  .job.current .job-meta .marker-dates {
     position: static;
     display: block;
     width: auto;
@@ -330,7 +311,7 @@ blockquote footer span {
     color: hsl(var(--muted));
   }
 
-  .job-meta time span { display: inline; }
+  .job-meta .marker-dates > * { display: inline; }
 
   .job > p { margin-top: var(--space-2); }
   .stack { margin-top: var(--space-3); }

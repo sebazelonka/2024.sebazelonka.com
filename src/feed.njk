@@ -8,15 +8,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
+    <description>{{ site.description | escape }}</description>
     <link>{{ site.url }}</link>
+    <language>en</language>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {%- for post in collections.posts %}
+    {%- set posts = collections.posts | sort("date") | reverse %}
+    <lastBuildDate>{{ posts[0].date.toUTCString() }}</lastBuildDate>
+    {%- for post in posts %}
     <item>
-      <title>{{ post.data.title }}</title>
+      <title>{{ post.data.title | escape }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-      <description>{{ post.data.description }}</description>
+      <description>{{ post.data.description | escape }}</description>
       <pubDate>{{ post.date.toUTCString() }}</pubDate>
     </item>
     {%- endfor %}
