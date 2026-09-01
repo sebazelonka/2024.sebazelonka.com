@@ -6,22 +6,28 @@ const isMobile = matchMedia("(max-width: 767px)");
 const canvas = document.querySelector("canvas.glow-canvas");
 
 // 1 = the current drift. 2 moves twice as fast, 0.5 half as fast.
-const SPEED = 1;
+const SPEED = 1.5;
 
 const THEME_COLORS = {
   dark: {
     a: [0.0, 0.82, 0.843], // hsl(184 100% 41%) — the old static glow color
     b: [0.706, 0.925, 0.318], // #b4ec51
-    strength: 0.4,
+    strength: 0.5,
   },
   light: {
     a: [0.0, 0.459, 0.467], // hsl(183 100% 23%)
     b: [0.294, 0.42, 0.0], // #4b6b00
-    strength: 0.32,
+    strength: 0.4,
   },
 };
 
+// fraction of the viewport kept glow-free on every edge
+const MARGIN = 0.12;
+
 const WGSL = `
+// fraction of the viewport kept glow-free on every edge
+const MARGIN: f32 = ${MARGIN};
+
 struct Params {
   time: f32,
   speed: f32,
@@ -57,8 +63,9 @@ fn fs_main(@location(0) uv: vec2f) -> @location(0) vec4f {
   let b = blob(p, centerB, 0.3);
   let glow = a * 0.75 + b * 0.55;
   let color = mix(params.colorA, params.colorB, clamp(b / max(a + b, 0.0001), 0.0, 1.0));
-  let fade = smoothstep(0.0, 0.06, uv.x);
-  let alpha = clamp(glow, 0.0, 1.0) * params.strength * fade;
+  let fadeH = smoothstep(0.0, MARGIN, uv.x) * (1.0 - smoothstep(1.0 - MARGIN, 1.0, uv.x));
+  let fadeV = smoothstep(0.0, MARGIN, uv.y) * (1.0 - smoothstep(1.0 - MARGIN, 1.0, uv.y));
+  let alpha = clamp(glow, 0.0, 1.0) * params.strength * fadeH * fadeV;
   return vec4f(color * alpha, alpha);
 }
 `;
