@@ -321,7 +321,6 @@
   .principles li + li { border-top: 1px solid hsl(var(--line)); border-left: 0; }
   .writing-list li,
   .til-list li { grid-template-columns: 1fr; gap: var(--space-2); padding: var(--space-5) 0; }
-  .writing-tag { margin: 0 0 0 var(--space-2); }
   .post-related { margin-top: var(--space-12); }
   .work-card { padding: var(--space-5); }
   .work-facts,
