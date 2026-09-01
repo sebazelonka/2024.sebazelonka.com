@@ -7,10 +7,10 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
 <link rel="stylesheet" href="experience.css" webc:scoped="resume-page" />
 
 <article class="resume" webc:root="override">
-  <header class="resume-hero">
+  <header class="page-header resume-hero">
     <p class="eyebrow">Curriculum vitae · Buenos Aires, Argentina</p>
-    <h1>Design sensitivity.<br />Engineering discipline.</h1>
-    <p class="lead">Frontend developer with a strong focus on UI, UX and accessibility.</p>
+    <h1 class="page-title">Design sensitivity.<br />Engineering discipline.</h1>
+    <p class="page-lead">Frontend developer with a strong focus on UI, UX and accessibility.</p>
     <p>With over 14 years of industry experience, I’m a former designer who bridges the gap between designers and developers. My interests include design systems, JAMstack, developer experience and accessibility.</p>
     <ul class="hero-meta" aria-label="Profile summary" role="list"><li>14+ years</li><li>Design systems</li><li>UI engineering</li><li>A11Y</li></ul>
   </header>
