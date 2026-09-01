@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: Notes on Creating and Maintaining Successful Design Systems
 date: 2023-01-12
-image: /img/sebazelonka.eventos-ba.png
 description: >-
   Some notes, links and thoughts on creating and maintaining design systems
 tags:

@@ -1,6 +1,18 @@
 ---
 permalink: "/"
-title: "UI Engineer"
 description: "Sebastian Zelonka is a UI engineer creating accessible interfaces and design systems."
 ---
+<script type="application/ld+json" webc:keep @raw="JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: site.name,
+  url: site.url,
+  description: site.description,
+  author: {
+    '@type': 'Person',
+    name: site.name,
+    url: site.url,
+    jobTitle: 'UI Engineer',
+  },
+})"></script>
 <sz-content> </sz-content>

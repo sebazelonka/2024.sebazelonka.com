@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: UX year-end events in Argentina
 date: 2018-12-06T00:55:44.799Z
-image: /img/sebazelonka.eventos-ba.png
+permalink: "/blog/ux-year-end-events-argentina/"
 description: >-
   Last week I attended two events from the Buenos Aires UX community. Some reflections.
 tags:
@@ -10,8 +10,6 @@ tags:
 ---
 
 ## User experience in product and service design — INTI Auditorium
-
-![](/img/20181128_085608_hdr.jpg)
 
 The first one took place on Wednesday, November 28, under the name "User experience in the design of products and services" and was held in a new venue for the UX "world": the INTI. The agenda had an excellent level.
 
@@ -29,11 +27,7 @@ The first one was given by Sof Andrade and had a reeeeeally long title: "Empathy
 
 Basically, she talked about how to prepare and run an ethnographic interview. She introduced a couple of tips that can be very useful when facing that challenge. Really good!
 
-![](/img/dtv0dyewoaaavdn.jpg-large.jpeg)
-
 The second workshop I attended was run by the folks from Auth0: **Bárbara Mercedes, Fernando Carretoni and Julian Leiss**. It had a shorter name: "Accessible Color".
-
-![](/img/dtwocojwsaizvna.jpg-large.jpeg)
 
 It was very interesting to see the work they are doing internally to improve the accessibility of their products and, on the other hand, to introduce many people to web accessibility.
 
