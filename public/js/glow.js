@@ -5,6 +5,9 @@ const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const isMobile = matchMedia("(max-width: 767px)");
 const canvas = document.querySelector("canvas.glow-canvas");
 
+// 1 = the current drift. 2 moves twice as fast, 0.5 half as fast.
+const SPEED = 1;
+
 const THEME_COLORS = {
   dark: {
     a: [0.0, 0.82, 0.843], // hsl(184 100% 41%) — the old static glow color
@@ -21,6 +24,7 @@ const THEME_COLORS = {
 const WGSL = `
 struct Params {
   time: f32,
+  speed: f32,
   size: vec2f,
   colorA: vec3f,
   colorB: vec3f,
@@ -38,7 +42,7 @@ fn blob(p: vec2f, center: vec2f, radius: f32) -> f32 {
 fn fs_main(@location(0) uv: vec2f) -> @location(0) vec4f {
   let aspect = max(params.size.x / params.size.y, 0.0001);
   let p = vec2f(uv.x * aspect, 1.0 - uv.y);
-  let t = params.time;
+  let t = params.time * params.speed;
 
   let centerA = vec2f(
     (0.16 + 0.05 * sin(t * 0.11)) * aspect,
@@ -82,6 +86,7 @@ async function start() {
     set: {
       params: {
         time: 0,
+        speed: SPEED,
         size: output.size,
         colorA: theme().a,
         colorB: theme().b,
