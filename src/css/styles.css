@@ -91,6 +91,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Cross-document view transitions: the sidebar, footer and background stay
+   put while the content cross-fades between pages. Browsers without support
+   just navigate normally. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  .sz-sidebar { view-transition-name: sidebar; }
+  .sz-footer { view-transition-name: footer; }
+  .theme-control { view-transition-name: theme-control; }
+  main { view-transition-name: content; }
+
+  ::view-transition-old(content),
+  ::view-transition-new(content) {
+    animation-duration: 220ms;
+  }
+}
+
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--typography));
