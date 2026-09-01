@@ -119,6 +119,25 @@ a { -webkit-tap-highlight-color: transparent; }
   transform: translateY(0);
 }
 
+.glow-canvas {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+body.glow-live .glow-canvas {
+  opacity: 1;
+}
+
+body.glow-live .sz-sidebar::before {
+  opacity: 0;
+}
+
 a {
   text-decoration: none;
   color: hsl(var(--link));

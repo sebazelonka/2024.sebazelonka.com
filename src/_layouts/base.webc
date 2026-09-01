@@ -41,6 +41,7 @@
     <!-- <style @raw="getCss(page.url)" webc:keep></style> -->
   </head>
   <body>
+    <canvas class="glow-canvas" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="container">
       <sz-sidebar> </sz-sidebar>
@@ -108,6 +109,9 @@
 
         update(root.dataset.theme, false);
       })();
+    </script>
+    <script type="module" webc:keep>
+      import "/js/glow.js";
     </script>
   </body>
 </html>
