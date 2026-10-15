@@ -13,6 +13,9 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
     <p class="page-lead">Frontend developer with a strong focus on UI, UX and accessibility.</p>
     <p>With over 14 years of industry experience, I’m a former designer who bridges the gap between designers and developers. My interests include design systems, JAMstack, developer experience and accessibility.</p>
     <ul class="hero-meta" aria-label="Profile summary" role="list"><li>14+ years</li><li>Design systems</li><li>UI engineering</li><li>A11Y</li></ul>
+    <a class="text-link resume-download" href="/cv/sebastian-zelonka-cv.pdf" download>
+      Download CV <span aria-hidden="true">↓</span><span class="download-format">PDF · 2 pages</span>
+    </a>
   </header>
 
   <section aria-labelledby="work-title">

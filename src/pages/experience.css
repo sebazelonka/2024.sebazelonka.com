@@ -1,3 +1,14 @@
+.resume-download {
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.download-format {
+  font-size: var(--text-caption);
+  font-weight: 400;
+  color: hsl(var(--muted));
+}
+
 .resume-hero > p:not(.eyebrow, .page-lead) {
   max-width: var(--measure);
   margin-top: var(--space-3);
