@@ -1,0 +1,21 @@
+src/pages/experience.css
+  s_4530f01c42aef2::t_75adb83609c58b 1-11
+src/pages/experience.webc
+  s_4530f01c42aef2::t_9785d4d2d26ace 16-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d965e6639cc828c21494deb2b297efc03ecc5ddb",
+  "prompts": {},
+  "sessions": {
+    "s_4530f01c42aef2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a13f79-462a-7f43-b8fe-f10827f54714",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Sebastian Zelonka <sebazelonka@users.noreply.github.com>"
+    }
+  }
+}
