@@ -25,7 +25,7 @@ description: "Sebastian Zelonka's experience across design systems, frontend eng
         <ul class="stack" aria-label="Technologies" role="list"><li>React</li><li>TypeScript</li><li>Chakra UI</li></ul>
       </article>
       <article class="job">
-        <div class="job-meta"><span>Making Sense</span><span class="marker-dates"><time datetime="2024-03">Mar ’24</time><span>Current</span></span></div>
+        <div class="job-meta"><span>Making Sense</span><span class="marker-dates"><time datetime="2024-03">Mar ’24</time><time datetime="2025-08">Aug ’25</time></span></div>
         <h3>Senior Design System Engineer</h3>
         <p>Leading a team working on SeCO’s design system library using Shadcn UI. Defining the stack, partnering with designers on token-based UI, developing custom styles and React components, and maintaining Storybook.</p>
         <ul class="stack" aria-label="Technologies" role="list"><li>Shadcn UI</li><li>Remix</li><li>TypeScript</li><li>Storybook</li></ul>
