@@ -44,9 +44,11 @@
     <canvas class="glow-canvas" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="container">
-      <sz-sidebar> </sz-sidebar>
+      <div class="sidebar-column">
+        <sz-sidebar> </sz-sidebar>
+        <sz-footer></sz-footer>
+      </div>
       <main id="main-content" tabindex="-1" @raw="content"></main>
-      <sz-footer></sz-footer>
     </div>
     <details class="theme-control">
       <summary aria-label="Choose color theme" title="Choose color theme">

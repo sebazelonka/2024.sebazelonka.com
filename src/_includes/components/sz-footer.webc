@@ -5,12 +5,10 @@
     align-items: center;
     gap: 2rem;
     padding: 2rem 0 3rem;
-    border-top: 1px solid hsl(var(--line));
     font-family: var(--font-sans);
     font-size: 0.85rem;
     color: hsl(var(--muted));
   }
-  p { margin: 0; }
   nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
   a { min-height: 2.75rem; display: inline-flex; align-items: center; }
   @media (max-width: 767px) {
@@ -19,7 +17,6 @@
   }
 </style>
 <footer webc:root="override">
-  <p>© Sebastian Zelonka</p>
   <nav aria-label="Social links">
     <a href="https://www.linkedin.com/in/sebastianzelonka/" target="_blank" rel="noreferrer noopener">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
     <a href="https://github.com/sebazelonka" target="_blank" rel="noreferrer noopener">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in new tab)</span></a>
