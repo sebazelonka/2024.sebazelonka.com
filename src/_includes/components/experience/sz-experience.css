@@ -67,6 +67,7 @@
 }
 
 .marker {
+  align-content: center;
   position: relative;
   z-index: 1;
   display: grid;
@@ -86,8 +87,8 @@
   background: hsl(var(--background));
 }
 
-.marker > * { display: block; }
-.marker > * + *::before { content: "— "; }
+.marker > * { display: block; white-space: nowrap; }
+.marker > * + *::before { content: "—"; display: block; line-height: 0.65; }
 
 .featured .marker {
   border: 0;

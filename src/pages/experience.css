@@ -75,6 +75,7 @@ section { padding-top: var(--space-10); }
 }
 
 .job-meta .marker-dates {
+  align-content: center;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -95,8 +96,8 @@ section { padding-top: var(--space-10); }
   background: hsl(var(--background));
 }
 
-.job-meta .marker-dates > * { display: block; line-height: inherit; }
-.job-meta .marker-dates > * + *::before { content: " — "; }
+.job-meta .marker-dates > * { display: block; line-height: inherit; white-space: nowrap; }
+.job-meta .marker-dates > * + *::before { content: " — "; display: block; line-height: 0.65; }
 
 .job.current .job-meta .marker-dates {
   border-color: transparent;
@@ -312,6 +313,7 @@ blockquote footer span {
   }
 
   .job-meta .marker-dates > * { display: inline; }
+  .job-meta .marker-dates > * + *::before { display: inline; line-height: inherit; }
 
   .job > p { margin-top: var(--space-2); }
   .stack { margin-top: var(--space-3); }
